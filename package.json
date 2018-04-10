@@ -1,0 +1,37 @@
+{
+  "name": "olympus-artemis-backend-theme",
+  "version": "0.0.1",
+  "description": "Olympus Artemis is a backend theme WordPress plugin used to make admin panel more attractive.",
+  "main": "resources/assets/css/artemis.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GetOlympus/Artemis-Backend-theme"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "olympus",
+    "artemis",
+    "backend",
+    "admin",
+    "wp-admin",
+    "theme"
+  ],
+  "author": "Achraf Chouk <achrafchouk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "load-grunt-config": "^0.19.2"
+  },
+  "dependencies": {
+    "time-grunt": "^1.3.0"
+  }
+}

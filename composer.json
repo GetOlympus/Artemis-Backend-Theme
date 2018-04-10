@@ -1,0 +1,31 @@
+{
+  "name": "getolympus/olympus-artemis-backend-theme",
+  "type": "wordpress-plugin",
+  "description": "Olympus Artemis is a backend theme WordPress plugin used to make admin panel more attractive.",
+  "keywords": ["wordpress", "plugin", "olympus", "artemis", "backend", "admin", "wp-admin", "theme"],
+  "homepage": "https://github.com/GetOlympus/Artemis-Backend-Theme",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Achraf Chouk",
+      "homepage": "https://github.com/crewstyle"
+    }
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "getolympus/olympus-zeus-core": "~0.0.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --standard=phpcs.xml ."
+    ]
+  }
+}
