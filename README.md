@@ -9,33 +9,24 @@ Build with ♥ for **WordPress developers**._
 
 ---
 
-## Features
-
-_in progress_
-
----
-
 ## Requirements
 
-_in progress_
++ PHP >= 7
++ [**Composer**](https://getcomposer.org/)
 
 ---
 
 ## Installation
 
-_in progress_
+If you use the **Olympus framework**, you can easily install the **Artemis Backend Theme** plugin with `composer`.  
+From your `olympus root folder`:
 
----
+```bash
+composer require getolympus/olympus-artemis-backend-theme
+```
 
-## Documentation
-
-_in progress_
-
----
-
-## All we need is looooooooooooove :)
-
-_in progress_
+Else, you can download the **Artemis Backend Theme** plugin from the official WordPress plugins repository.  
+_The download link will be available soon._
 
 ---
 
