@@ -58,16 +58,21 @@ defined('S')                    or define('S', DIRECTORY_SEPARATOR);
 defined('OL_ISADMIN')           or define('OL_ISADMIN', is_admin());
 // User connected or not, constant defined in main Olympus framework (mu-plugins autoloaded)
 defined('OL_ISCONNECTED')       or define('OL_ISCONNECTED', is_user_logged_in());
-// Dictionary key
-defined('OL_ART_DICTIONARY')    or define('OL_ART_DICTIONARY', 'olympus-artemis');
 // Vendor package, constant defined in main Olympus framework
 defined('VENDORPATH')           or define('VENDORPATH', realpath(dirname(__DIR__)).S.'vendor'.S);
+
+/**
+ * Define constants
+ */
+
+// Dictionary key
+define('OL_ARTEMIS_DICTIONARY', 'olympus-artemis');
 // Resources path.
-defined('RESOURCESPATH')        or define('RESOURCESPATH', realpath(dirname(__DIR__)).S.'resources'.S);
+define('OL_ARTEMIS_RESOURCESPATH', realpath(dirname(__FILE__)).S.'resources'.S);
 // Configurations path
-defined('CONFIGSPATH')          or define('CONFIGSPATH', RESOURCESPATH.'configs'.S);
+define('OL_ARTEMIS_CONFIGSPATH', OL_ARTEMIS_RESOURCESPATH.'configs'.S);
 // Controllers path
-defined('CONTROLLERSPATH')      or define('CONTROLLERSPATH', RESOURCESPATH.'controllers'.S);
+define('OL_ARTEMIS_CONTROLLERSPATH', OL_ARTEMIS_RESOURCESPATH.'controllers'.S);
 
 /**
  * ArtemisBackendTheme class
@@ -107,7 +112,8 @@ if (!class_exists('ArtemisBackendTheme')) {
              */
             $this->configurations = [
                 // Alias to load                => File path to associate
-                'AdminThemesConfiguration'      => CONFIGS_PATH.'admin-themes.php',
+                'AdminThemesConfiguration'      => OL_ARTEMIS_CONFIGSPATH.'admin-themes.php',
+                'AccessManagementConfiguration' => OL_ARTEMIS_CONFIGSPATH.'access-management.php',
             ];
 
             /**
@@ -130,7 +136,7 @@ if (!class_exists('ArtemisBackendTheme')) {
             $this->paths = [
                 // Action to make   => Array of File paths to associate
                 'admin_menu'        => [
-                    CONTROLLERS_PATH.'adminpages',
+                    OL_ARTEMIS_CONTROLLERSPATH.'adminpages',
                 ],
             ];
         }

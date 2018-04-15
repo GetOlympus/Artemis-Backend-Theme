@@ -18,9 +18,9 @@ return [
      */
     'artemis'   => [
         // The name of the theme.
-        'name'      => __('Artemis'),
+        'name'      => __('Artemis', OL_ARTEMIS_DICTIONARY),
         // The URL of the CSS file containing the color scheme.
-        'url'       => RESOURCESPATH.'assets'.S.'css'.S.'artemis.min.css',
+        'url'       => OL_ARTEMIS_RESOURCESPATH.'assets'.S.'css'.S.'artemis.min.css',
         // An array of CSS color definition strings which are used to give the user a feel for the theme.
         'colors'    => ['#47baec', '#ffffff', '#66707c', '#292d38'],
         // CSS color definitions used to color any SVG icons.
