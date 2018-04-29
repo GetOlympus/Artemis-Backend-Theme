@@ -52,7 +52,7 @@ class AdminThemesPage extends \GetOlympus\Zeus\AdminPage\Controller\AdminPage
                 ]),
                 \GetOlympus\Field\Radio::build('ol_artemis_login_custom_css', [
                     'title'         => __('Use custom CSS on login page?', OL_ARTEMIS_DICTIONARY),
-                    'description'   => __('By setting this option to <code>Yes</code>, WordPress will only use the default Artemis Backend Theme CSS stylesheet.<br/>The file can be found here: <a href="'.WP_CONTENT_URL.'/plugins/'.$path.'" target="_blank"><code>'.$path.'</code></a>', OL_ARTEMIS_DICTIONARY),
+                    'description'   => __('By setting this option to <code>Yes</code>, WordPress will only use the default Artemis Backend Theme CSS stylesheet.<br/>The file can be found here: <a href="'.WP_PLUGIN_URL.S.$path.'" target="_blank"><code>'.$path.'</code></a>', OL_ARTEMIS_DICTIONARY),
                     'default'       => 0,
                     'options'       => [
                         0 => __('No', OL_ARTEMIS_DICTIONARY),

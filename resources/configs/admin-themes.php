@@ -9,6 +9,10 @@
  * @since    0.0.1
  */
 
+// Generate CSS file path
+$path = dirname(dirname(dirname(__FILE__)));
+$path = basename($path).S.'resources'.S.'assets'.S.'css'.S.'artemis.min.css';
+
 return [
     /**
      * @var     string  $key    The key used to define theme.
@@ -20,7 +24,7 @@ return [
         // The name of the theme.
         'name'      => __('Artemis', OL_ARTEMIS_DICTIONARY),
         // The URL of the CSS file containing the color scheme.
-        'url'       => OL_ARTEMIS_RESOURCESPATH.'assets'.S.'css'.S.'artemis.min.css',
+        'url'       => WP_PLUGIN_URL.S.$path,
         // An array of CSS color definition strings which are used to give the user a feel for the theme.
         'colors'    => ['#47baec', '#ffffff', '#66707c', '#292d38'],
         // CSS color definitions used to color any SVG icons.
