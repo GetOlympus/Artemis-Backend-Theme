@@ -12,7 +12,7 @@ namespace ArtemisBackendTheme;
  * Version: 0.0.1
  *
  * Author URI: https://github.com/crewstyle
- * Plugin URI: http://olympus.readme.io/Artemis-Backend-theme
+ * Plugin URI: https://github.com/GetOlympus/Artemis-Backend-Theme
  * Text Domain: olympus-artemis
  * Domain Path: /languages
  * License: The MIT License (MIT)
@@ -56,8 +56,6 @@ defined('S')                    or define('S', DIRECTORY_SEPARATOR);
 
 // Admin panel or not, constant defined in main Olympus framework (mu-plugins autoloaded)
 defined('OL_ISADMIN')           or define('OL_ISADMIN', is_admin());
-// User connected or not, constant defined in main Olympus framework (mu-plugins autoloaded)
-defined('OL_ISCONNECTED')       or define('OL_ISCONNECTED', is_user_logged_in());
 // Vendor package, constant defined in main Olympus framework
 defined('VENDORPATH')           or define('VENDORPATH', realpath(dirname(__DIR__)).S.'vendor'.S);
 
@@ -101,6 +99,8 @@ if (!class_exists('ArtemisBackendTheme')) {
              * Add configuration you need to iniitlaize.
              * You can init 5 kinds of configurators:
              *
+             * - AdminThemesConfiguration able to add login and register custimzations
+             * - AccessManagementConfiguration able to add custom admin CSS
              * - MenusConfiguration able to add custom menus navigation
              * - SettingsConfiguration able to add custom backend and frontend settings
              * - ShortcodesConfiguration able to add custom shortcodes
