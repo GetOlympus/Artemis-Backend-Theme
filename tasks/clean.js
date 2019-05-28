@@ -5,15 +5,19 @@
  * @since 0.0.1
  */
 
-module.exports = {
-  app: [
-    '<%= olympus.paths.tar %>/css/*',
-    '<%= olympus.paths.tar %>/fonts/*',
-    '<%= olympus.paths.tar %>/img/*',
-    '<%= olympus.paths.tar %>/js/*'
-  ],
+'use strict';
 
-  src: [
-    '<%= olympus.paths.src %>/css'
-  ]
+module.exports = function (grunt) {
+  return {
+    app: [
+      'resources/assets/css/*',
+      'resources/assets/fonts/*',
+      'resources/assets/img/*',
+      'resources/assets/js/*'
+    ],
+
+    src: [
+      'src/css'
+    ]
+  }
 };

@@ -1,13 +1,7 @@
-/**
- * Copyright 2016 Achraf Chouk
- * Achraf Chouk (https://github.com/crewstyle)
- *
- * 20.metaboxes.less
- */
+/*! 40.metaboxes */
 
-/**
- * Postbox and stuffbox
- */
+// Postbox and stuffbox
+
 #poststuff, #poststuff .stuffbox,
 .postbox, .stuffbox {
     border: none;
@@ -19,28 +13,27 @@
 
     h2.hndle,
     > h3 {
-        border-color: fade(@skelsilver, 50%);
-        color: @skelblack;
+        border-color: fade(@bodycolor, 50%);
+        color: @sidebarhoverbackgroundcolor;
         font-size: 16px;
         font-weight: 400;
         padding: 8px 12px 8px 0;
     }
 }
 
-/**
- * Dashboard
- */
+// Dashboard
+
 .welcome-panel {
-    background-color: fade(@graydarker, 1.5%);
+    background-color: fade(lighten(@blackcolor, 10%), 1.5%);
     border: none;
 }
 #dashboard-widgets-wrap {
     .postbox, .stuffbox {
-        background-color: fade(@graydarker, 1.5%);
+        background-color: fade(lighten(@blackcolor, 10%), 1.5%);
 
-        -webkit-box-shadow: 0 1px 1px fade(@black, 0.4%);
-        -moz-box-shadow: 0 1px 1px fade(@black, 0.4%);
-        box-shadow: 0 1px 1px fade(@black, 0.4%);
+        -webkit-box-shadow: 0 1px 1px fade(@blackcolor, 0.4%);
+        -moz-box-shadow: 0 1px 1px fade(@blackcolor, 0.4%);
+        box-shadow: 0 1px 1px fade(@blackcolor, 0.4%);
 
         h2.hndle,
         > h3 {
@@ -49,14 +42,13 @@
     }
 }
 
-/**
- * Toggle
- */
+// Toggle
+
 .js .postbox .handlediv:focus .toggle-indicator:before {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
 .js .meta-box-sortables .postbox .toggle-indicator:before, .js .sidebar-name .sidebar-name-arrow:before {
-    color: @blue;
+    color: @infocolor;
 }

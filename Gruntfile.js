@@ -4,12 +4,14 @@
  * @since 0.0.1
  */
 
+'use strict';
+
 module.exports = function(grunt) {
   var path = require('path'),
     olympus = {
-      paths: {
-        src: 'src',
-        tar: 'resources/assets'
+      "paths": {
+        "src": "src",
+        "tar": "resources/assets"
       }
     };
 

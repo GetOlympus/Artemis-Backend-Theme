@@ -5,16 +5,18 @@
  * @since 0.0.1
  */
 
-module.exports = {
-  src: {
-    files: {
-      '<%= olympus.paths.tar %>/css/artemis.min.css': [
-        '<%= olympus.paths.src %>/css/artemis.css'
-      ],
+'use strict';
 
-      '<%= olympus.paths.tar %>/css/artemis.login.min.css': [
-        '<%= olympus.paths.src %>/css/artemis.login.css'
-      ]
+module.exports = function (grunt) {
+  return {
+    src: {
+      files: [{
+        expand: true,
+        cwd: 'src/css',
+        src: ['*.css'],
+        dest: 'resources/assets/css',
+        ext: '.min.css'
+      }]
     }
   }
 };

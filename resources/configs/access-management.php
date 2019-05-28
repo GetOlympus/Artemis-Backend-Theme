@@ -11,22 +11,17 @@
 
 // Generate CSS file path
 $path = dirname(dirname(dirname(__FILE__)));
-$path = basename($path).S.'resources'.S.'assets'.S.'css'.S.'artemis.min.css';
+$path = basename($path);
 
 // Generate Home blog
 $home = defined('OL_BLOG_HOME') ? OL_BLOG_HOME : get_option('home');
 
 // Check vars: access urls
-$access_urls_login = get_option('ol_artemis_access_urls');
-$access_urls = [
-    'login'         => '/'.$access_urls_login,
-    'logout'        => '/'.$access_urls_login.'?action=logout',
-    'lostpassword'  => '/'.$access_urls_login.'?action=lostpassword',
-    'register'      => '/'.$access_urls_login.'?action=register',
-];
+$access_url = get_option('ol_artemis_access_url', '');
+$access_url = (empty($access_url) ? 'wp-login' : $access_url).'.php';
 
 // Check vars: login error
-$login_error = get_option('ol_artemis_login_error');
+$login_error = get_option('ol_artemis_login_error_message', 1);
 
 // Check vars: login header
 $login_header_title = get_option('ol_artemis_login_header_title', '');
@@ -44,7 +39,7 @@ $login_style_check = get_option('ol_artemis_login_style', 1);
 $login_style = !$login_style_check ? [] : [
     'styles'        => [
         'artemis',
-        $path,
+        $path.S.'resources'.S.'assets'.S.'css'.S.'artemis.min.css',
         []
     ]
 ];
@@ -56,9 +51,9 @@ return [
      */
 
     /**
-     * Hiding wp-login.php/wp-register.php in the login and registration URLs
+     * Hiding wp-login.php in the login and registration URLs
      */
-    'access-urls'   => $access_urls,
+    'access-url'    => $access_url,
 
     /**
      * Redisign wp-login.php page with custom error message.

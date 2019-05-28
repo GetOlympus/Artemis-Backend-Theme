@@ -5,19 +5,20 @@
  * @since 0.0.1
  */
 
-module.exports = {
-  app: {
-    files: [
-      {
-        //Images
-        expand: true,
-        flatten: true,
-        filter: 'isFile',
-        src: [
-          '<%= olympus.paths.src %>/img/*'
-        ],
-        dest: '<%= olympus.paths.tar %>/img/'
-      }
-    ]
-  },
+'use strict';
+
+module.exports = function (grunt) {
+  return {
+    app: {
+      files: [
+        {
+          expand: true,
+          flatten: true,
+          filter: 'isFile',
+          src: ['src/img/*'],
+          dest: 'resources/assets/img/'
+        }
+      ]
+    }
+  }
 };

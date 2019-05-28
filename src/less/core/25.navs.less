@@ -1,12 +1,7 @@
-/**
- * Copyright 2016 Achraf Chouk
- * Achraf Chouk (https://github.com/crewstyle)
- *
- * 11.navs.less
- */
+/*! 25.navs */
 
 h2.nav-tab-wrapper {
-    background: @white;
+    background: @whitecolor;
     padding: 9px 2% 0;
 
     .nav-tab {
@@ -18,7 +13,7 @@ h2.nav-tab-wrapper {
     .nav-tab-active:focus,
     .nav-tab-active:focus:active,
     .nav-tab-active:hover {
-        background: @graylighter;
-        border-bottom-color: @graylighter;
+        background: lighten(@blackcolor, 70%);
+        border-bottom-color: lighten(@blackcolor, 70%);
     }
 }

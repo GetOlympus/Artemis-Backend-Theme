@@ -1,0 +1,29 @@
+/*! 12.admin.menu.collapse */
+
+#adminmenu li#collapse-menu {
+    background-color: fade(@adminbarcolor, 15%);
+
+    #collapse-button {
+        color: @adminbarcolor;
+        padding: 0 10px;
+        text-align: left;
+
+        .collapse-button-icon,
+        .collapse-button-label {
+            position: static;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+.folded #adminmenu {
+    li#collapse-menu #collapse-button {
+        padding: 0;
+
+        .collapse-button-label {
+            display: none;
+        }
+    }
+}

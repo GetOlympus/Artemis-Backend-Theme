@@ -1,0 +1,192 @@
+{
+  "name": "Artemis",
+
+
+
+  "primarycolor": "#47baec",
+  "secondarycolor": "#66707c",
+  "thirdcolor": "#292d38",
+
+  "whitecolor": "#ffffff",
+  "blackcolor": "#181a21",
+  "infocolor": "#1297e0",
+  "warningcolor": "#e74c3c",
+  "errorcolor": "#e74c3c",
+  "successcolor": "#99d537",
+
+  "defaultborderradius": "3px",
+  "defaulttransition": "all .250s ease",
+  "defaultsidebarwidth": "200px",
+
+
+
+  "bodycolor": "@whitecolor",
+  "bodypadding": "20px",
+
+
+
+  "linkcolor": "darken(@primarycolor, 20%)",
+  "linktextdecoration": "none",
+  "linktexttransform": "none",
+
+  "linkhovercolor": "darken(@primarycolor, 30%)",
+  "linkhovertextdecoration": "none",
+  "linkhovertexttransform": "none",
+
+  "linktransition": "@defaulttransition",
+
+
+
+  "inputbackgroundcolor": "@whitecolor",
+  "inputborder": "1px solid lighten(@blackcolor, 75%)",
+  "inputborderradius": "@defaultborderradius",
+  "inputboxshadow": "inset 0 1px 2px fade(@blackcolor, 7.5%)",
+  "inputcolor": "lighten(@blackcolor, 25%)",
+  "inputfontsize": "100%",
+  "inputpadding": "6px 8px",
+
+  "inputfocusbackgroundcolor": "@inputbackgroundcolor",
+  "inputfocusborder": "1px solid @primarycolor",
+  "inputfocusborderradius": "@inputborderradius",
+  "inputfocusboxshadow": "inset 0 1px 2px fade(@blackcolor, 7.5%), 0 0 0 3px fade(@primarycolor, 30%)",
+  "inputfocuscolor": "@inputcolor",
+  "inputfocusfontsize": "@inputfontsize",
+  "inputfocuspadding": "@inputpadding",
+
+  "inputtransition": "@defaulttransition",
+
+
+
+  "adminbarbackgroundcolor": "@thirdcolor",
+  "adminbarcolor": "@secondarycolor",
+  "adminbarhoverbackgroundcolor": "@thirdcolor",
+  "adminbarhovercolor": "@primarycolor",
+  "adminbarfontsize": "13px",
+  "adminbarheight": "32px",
+  "adminbarmargin": "0",
+  "adminbarpadding": "0 0 0 @defaultsidebarwidth",
+
+  "sidebarbackgroundcolor": "@thirdcolor",
+  "sidebarcolor": "@secondarycolor",
+  "sidebarhoverbackgroundcolor": "@thirdcolor",
+  "sidebarhovercolor": "@primarycolor",
+  "sidebarfontsize": "13px",
+  "sidebarmargin": "0 0 32px",
+  "sidebarpadding": "0",
+  "sidebartexttransform": "none",
+  "sidebarwidth": "@defaultsidebarwidth",
+
+  "dropdownbackgroundcolor": "@blackcolor",
+  "dropdowncolor": "@secondarycolor",
+  "dropdownhoverbackgroundcolor": "@blackcolor",
+  "dropdownhovercolor": "@primarycolor",
+  "dropdownfontsize": "13px",
+  "dropdownmargin": "0",
+  "dropdownpadding": "8px 0",
+  "dropdownwidth": "160px",
+
+
+
+  "boxbackgroundcolor": "rgba(24,26,33,.015)",
+  "boxcolor": "@blackcolor",
+  "boxfontsize": "14px",
+
+
+
+  "buttonbackgroundcolor": "fade(@blackcolor, 5%)",
+  "buttonbackgroundimage": "none",
+  "buttonborder": "none",
+  "buttonborderradius": "@defaultborderradius",
+  "buttonboxshadow": "none",
+  "buttoncolor": "@linkcolor",
+  "buttonfontsize": "12px",
+  "buttonmargin": "0",
+  "buttonpadding": "2px 14px",
+  "buttontextshadow": "none",
+  "buttontexttransform": "none",
+
+  "buttonhoverbackgroundcolor": "fade(@blackcolor, 10%)",
+  "buttonhoverbackgroundimage": "@buttonbackgroundimage",
+  "buttonhoverborder": "@buttonborder",
+  "buttonhoverborderradius": "@buttonborderradius",
+  "buttonhoverboxshadow": "@buttonboxshadow",
+  "buttonhovercolor": "@buttoncolor",
+  "buttonhoverfontsize": "@buttonfontsize",
+  "buttonhovermargin": "@buttonmargin",
+  "buttonhoverpadding": "@buttonpadding",
+  "buttonhovertextshadow": "@buttontextshadow",
+  "buttonhovertexttransform": "@buttontextshadow",
+
+  "buttontransition": "@defaulttransition",
+
+
+
+  "buttonprimarybackgroundcolor": "@linkcolor",
+  "buttonprimarybackgroundimage": "none",
+  "buttonprimaryborder": "none",
+  "buttonprimaryborderradius": "@defaultborderradius",
+  "buttonprimaryboxshadow": "none",
+  "buttonprimarycolor": "@whitecolor",
+  "buttonprimaryfontsize": "12px",
+  "buttonprimarymargin": "0",
+  "buttonprimarypadding": "2px 14px",
+  "buttonprimarytextshadow": "none",
+  "buttonprimarytexttransform": "none",
+
+  "buttonprimaryhoverbackgroundcolor": "darken(@buttonprimarybackgroundcolor, 10%)",
+  "buttonprimaryhoverbackgroundimage": "@buttonprimarybackgroundimage",
+  "buttonprimaryhoverborder": "@buttonprimaryborder",
+  "buttonprimaryhoverborderradius": "@buttonprimaryborderradius",
+  "buttonprimaryhoverboxshadow": "@buttonprimaryboxshadow",
+  "buttonprimaryhovercolor": "@buttonprimarycolor",
+  "buttonprimaryhoverfontsize": "@buttonprimaryfontsize",
+  "buttonprimaryhovermargin": "@buttonprimarymargin",
+  "buttonprimaryhoverpadding": "@buttonprimarypadding",
+  "buttonprimaryhovertextshadow": "@buttonprimarytextshadow",
+  "buttonprimaryhovertexttransform": "@buttonprimarytextshadow",
+
+  "buttonprimarytransition": "@defaulttransition",
+
+
+
+  "buttonsecondarybackgroundcolor": "@buttonbackgroundcolor",
+  "buttonsecondarybackgroundimage": "@buttonbackgroundimage",
+  "buttonsecondaryborder": "@buttonborder",
+  "buttonsecondaryborderradius": "@buttonborderradius",
+  "buttonsecondaryboxshadow": "@buttonboxshadow",
+  "buttonsecondarycolor": "@buttoncolor",
+  "buttonsecondaryfontsize": "@buttonfontsize",
+  "buttonsecondarymargin": "@buttonmargin",
+  "buttonsecondarypadding": "@buttonpadding",
+  "buttonsecondarytextshadow": "@buttontextshadow",
+  "buttonsecondarytexttransform": "@buttontextshadow",
+
+  "buttonsecondaryhoverbackgroundcolor": "@buttonhoverbackgroundcolor",
+  "buttonsecondaryhoverbackgroundimage": "@buttonhoverbackgroundimage",
+  "buttonsecondaryhoverborder": "@buttonhoverborder",
+  "buttonsecondaryhoverborderradius": "@buttonhoverborderradius",
+  "buttonsecondaryhoverboxshadow": "@buttonhoverboxshadow",
+  "buttonsecondaryhovercolor": "@buttonhovercolor",
+  "buttonsecondaryhoverfontsize": "@buttonhoverfontsize",
+  "buttonsecondaryhovermargin": "@buttonhovermargin",
+  "buttonsecondaryhoverpadding": "@buttonhoverpadding",
+  "buttonsecondaryhovertextshadow": "@buttonhovertextshadow",
+  "buttonsecondaryhovertexttransform": "@buttonhovertextshadow",
+
+  "buttonsecondarytransition": "@buttontransition",
+
+
+
+  "loginbackgroundcolor": "transparent",
+  "loginbackgroundimage": "url(../img/artemis-login.jpg)",
+  "logincolor": "@blackcolor",
+  "loginfontsize": "13px",
+  "loginmargin": "30px auto 0",
+  "loginpadding": "2% 0",
+
+
+
+  "iconbase": "@secondarycolor",
+  "iconfocus": "@primarycolor",
+  "iconposition": "left"
+}

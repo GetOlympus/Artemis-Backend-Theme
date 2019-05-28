@@ -7,20 +7,19 @@
 
 body.login div#login {
     .message {
-        background: @loginmessage;
+        background: @logincolor;
         border: none;
-        color: @white;
-        margin: 30px auto 0;
+        color: @whitecolor;
+        margin: @loginmargin;
         max-width: 94%;
-        padding-left: 2%;
-        padding-right: 2%;
+        padding: @loginpadding;
         width: 345px;
     }
 
     #login_error {
-        background: @loginerror;
+        background: fade(@errorcolor, 50%);
         border: none;
-        color: @white;
+        color: @errorcolor;
         margin: 30px auto 0;
         max-width: 94%;
         padding-left: 2%;
@@ -28,12 +27,12 @@ body.login div#login {
         width: 345px;
 
         a {
-            color: @white;
+            color: @errorcolor;
         }
     }
 
     #reg_passmail {
-        color: @white;
+        color: @whitecolor;
         font-style: italic;
         margin: 30px 0 -20px;
     }

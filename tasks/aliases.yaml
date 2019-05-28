@@ -5,11 +5,9 @@ default:
     # Clean target fodlers
     - 'clean:app'
     # Process less files
-    - 'less:core'
-    - 'less:login'
-    # Minify css and js
+    - 'less'
+    # Minify css
     - 'cssmin:src'
-    #- 'uglify:src'
     # Move files to target
     - 'copy:app'
     # Minify images and clean source folders

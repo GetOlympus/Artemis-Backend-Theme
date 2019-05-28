@@ -1,0 +1,191 @@
+{
+  "name": "WP Rocket",
+
+
+
+  "primarycolor": "#f56640",
+  "secondarycolor": "#2d1656",
+
+  "whitecolor": "#ffffff",
+  "blackcolor": "#121116",
+  "infocolor": "#02707f",
+  "warningcolor": "#e74c3c",
+  "errorcolor": "#d60e5b",
+  "successcolor": "#00a66b",
+
+  "defaultborderradius": "3px",
+  "defaulttransition": "all .250s ease",
+  "defaultsidebarwidth": "225px",
+
+
+
+  "linkcolor": "#989799",
+  "linktextdecoration": "none",
+  "linktexttransform": "none",
+
+  "linkhovercolor": "#1eadbf",
+  "linkhovertextdecoration": "none",
+  "linkhovertexttransform": "none",
+
+  "linktransition": "all",
+
+
+
+  "inputbackgroundcolor": "@whitecolor",
+  "inputborder": "2px solid #c2cad4",
+  "inputborderradius": "@defaultborderradius",
+  "inputboxshadow": "none",
+  "inputcolor": "@blackcolor",
+  "inputfontsize": "100%",
+  "inputpadding": "6px 8px",
+
+  "inputfocusbackgroundcolor": "@inputbackgroundcolor",
+  "inputfocusborder": "2px solid #444",
+  "inputfocusborderradius": "@inputborderradius",
+  "inputfocusboxshadow": "none",
+  "inputfocuscolor": "@inputcolor",
+  "inputfocusfontsize": "@inputfontsize",
+  "inputfocuspadding": "@inputpadding",
+
+  "inputtransition": "@defaulttransition",
+
+
+
+  "bodycolor": "#f1f1f1",
+  "bodypadding": "20px",
+
+
+
+  "adminbarbackgroundcolor": "@bodycolor",
+  "adminbarcolor": "@blackcolor",
+  "adminbarhoverbackgroundcolor": "@whitecolor",
+  "adminbarhovercolor": "@primarycolor",
+  "adminbarfontsize": "13px",
+  "adminbarheight": "32px",
+  "adminbarmargin": "0",
+  "adminbarpadding": "0 0 0 @defaultsidebarwidth",
+
+  "sidebarbackgroundcolor": "@adminbarbackgroundcolor",
+  "sidebarcolor": "@adminbarcolor",
+  "sidebarhoverbackgroundcolor": "@adminbarhoverbackgroundcolor",
+  "sidebarhovercolor": "@adminbarhovercolor",
+  "sidebarfontsize": "@adminbarfontsize",
+  "sidebarmargin": "0 0 32px",
+  "sidebarpadding": "0",
+  "sidebartexttransform": "uppercase",
+  "sidebarwidth": "@defaultsidebarwidth",
+
+  "dropdownbackgroundcolor": "@adminbarhoverbackgroundcolor",
+  "dropdowncolor": "@adminbarcolor",
+  "dropdownhoverbackgroundcolor": "@adminbarhoverbackgroundcolor",
+  "dropdownhovercolor": "@adminbarhovercolor",
+  "dropdownfontsize": "@adminbarheight",
+  "dropdownmargin": "0",
+  "dropdownpadding": "8px 0",
+  "dropdownwidth": "180px",
+
+
+
+  "boxbackgroundcolor": "#72777c",
+  "boxcolor": "#121116",
+  "boxfontsize": "14px",
+
+
+
+  "buttonbackgroundcolor": "@secondarycolor",
+  "buttonbackgroundimage": "none",
+  "buttonborder": "none",
+  "buttonborderradius": "@defaultborderradius",
+  "buttonboxshadow": "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
+  "buttoncolor": "@whitecolor",
+  "buttonfontsize": "11px",
+  "buttonmargin": "0",
+  "buttonpadding": "2px 14px",
+  "buttontextshadow": "none",
+  "buttontexttransform": "uppercase",
+
+  "buttonhoverbackgroundcolor": "@secondarycolor",
+  "buttonhoverbackgroundimage": "none",
+  "buttonhoverborder": "none",
+  "buttonhoverborderradius": "@defaultborderradius",
+  "buttonhoverboxshadow": "0 7px 14px rgba(50,50,93,0.25), 0 3px 6px rgba(0,0,0,0.2)",
+  "buttonhovercolor": "@whitecolor",
+  "buttonhoverfontsize": "@buttonfontsize",
+  "buttonhovermargin": "0",
+  "buttonhoverpadding": "2px 14px",
+  "buttonhovertextshadow": "none",
+  "buttonhovertexttransform": "uppercase",
+
+  "buttontransition": "all",
+
+
+
+  "buttonprimarybackgroundcolor": "#f56640",
+  "buttonprimarybackgroundimage": "none",
+  "buttonprimaryborder": "none",
+  "buttonprimaryborderradius": "@defaultborderradius",
+  "buttonprimaryboxshadow": "none",
+  "buttonprimarycolor": "@whitecolor",
+  "buttonprimaryfontsize": "11px",
+  "buttonprimarymargin": "0",
+  "buttonprimarypadding": "2px 14px",
+  "buttonprimarytextshadow": "none",
+  "buttonprimarytexttransform": "uppercase",
+
+  "buttonprimaryhoverbackgroundcolor": "#f56640",
+  "buttonprimaryhoverbackgroundimage": "none",
+  "buttonprimaryhoverborder": "none",
+  "buttonprimaryhoverborderradius": "@defaultborderradius",
+  "buttonprimaryhoverboxshadow": "none",
+  "buttonprimaryhovercolor": "@whitecolor",
+  "buttonprimaryhoverfontsize": "@buttonprimaryfontsize",
+  "buttonprimaryhovermargin": "0",
+  "buttonprimaryhoverpadding": "2px 14px",
+  "buttonprimaryhovertextshadow": "none",
+  "buttonprimaryhovertexttransform": "uppercase",
+
+  "buttonprimarytransition": "all",
+
+
+
+  "buttonsecondarybackgroundcolor": "#2d1656",
+  "buttonsecondarybackgroundimage": "none",
+  "buttonsecondaryborder": "none",
+  "buttonsecondaryborderradius": "@defaultborderradius",
+  "buttonsecondaryboxshadow": "none",
+  "buttonsecondarycolor": "#2c92da",
+  "buttonsecondaryfontsize": "11px",
+  "buttonsecondarymargin": "0",
+  "buttonsecondarypadding": "2px 14px",
+  "buttonsecondarytextshadow": "none",
+  "buttonsecondarytexttransform": "uppercase",
+
+  "buttonsecondaryhoverbackgroundcolor": "#2d1656",
+  "buttonsecondaryhoverbackgroundimage": "none",
+  "buttonsecondaryhoverborder": "none",
+  "buttonsecondaryhoverborderradius": "@defaultborderradius",
+  "buttonsecondaryhoverboxshadow": "none",
+  "buttonsecondaryhovercolor": "#2c92da",
+  "buttonsecondaryhoverfontsize": "@buttonsecondaryfontsize",
+  "buttonsecondaryhovermargin": "0",
+  "buttonsecondaryhoverpadding": "2px 14px",
+  "buttonsecondaryhovertextshadow": "none",
+  "buttonsecondaryhovertexttransform": "uppercase",
+
+  "buttonsecondarytransition": "all",
+
+
+
+  "loginbackgroundcolor": "transparent",
+  "loginbackgroundimage": "url(../img/tamed-login.jpg)",
+  "logincolor": "#121116",
+  "loginfontsize": "13px",
+  "loginmargin": "30px auto 0",
+  "loginpadding": "2% 0",
+
+
+
+  "iconbase": "#989799",
+  "iconfocus": "@primarycolor",
+  "iconposition": "right"
+}

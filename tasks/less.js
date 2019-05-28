@@ -5,56 +5,36 @@
  * @since 0.0.1
  */
 
-var _configs = {
-  // normal
-  white: '#ffffff',
-  black: '#000000',
-  blue: '#1297e0',
-  red: '#e74c3c',
-  green: '#99d537',
+module.exports = function (grunt) {
+  var merge = require('lodash.merge'),
+    files = grunt.file.expand({filter: "isFile"}, "src/configs/*.json"),
+    jsonArr = [], jsonObj = {};
 
-  // gray
-  graylighter: '#fdfdfd',
-  graylight: '#f1f1f1',
-  graymedium: '#999999',
-  graydark: '#282c37',
-  graydarker: '#181a21',
+  // read all files and build array
+  files.forEach(function (jsonfile) {
+    var name = jsonfile.split('/').pop().split('.')[0],
+      json = grunt.file.readJSON("src/configs/"+name+".json");
 
-  // login
-  loginerror: '#dd3d36',
-  loginmessage: '#2ea2cc',
-  loginbutton: '#2c92da',
+    jsonArr.push({[name]: {
+      options: {
+        modifyVars: json,
+        optimization: 2
+      },
+      files: {
+        ["src/css/"+name+"-login.css"]: [
+          "src/less/login/*.less"
+        ],
+        ["src/css/"+name+".css"]: [
+          "src/less/core/*.less"
+        ]
+      }
+    }});
+  });
 
-  // skeleton
-  skelsilver: '#cbced3',
-  skelmetal: '#67717d',
-  skelblack: '#282c38'
-};
+  // build json object
+  jsonArr.forEach(function (item) {
+    jsonObj = merge(jsonObj, item);
+  });
 
-module.exports = {
-  core: {
-    options: {
-      modifyVars: _configs,
-      optimization: 2
-    },
-    files: {
-      '<%= olympus.paths.src %>/css/artemis.css': [
-        '<%= olympus.paths.src %>/less/core.less',
-        '<%= olympus.paths.src %>/less/core/*.less'
-      ]
-    }
-  },
-
-  login: {
-    options: {
-      modifyVars: _configs,
-      optimization: 2
-    },
-    files: {
-      '<%= olympus.paths.src %>/css/artemis.login.css': [
-        '<%= olympus.paths.src %>/less/login.less',
-        '<%= olympus.paths.src %>/less/login/*.less'
-      ]
-    }
-  }
+  return jsonObj;
 };

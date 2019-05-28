@@ -1,24 +1,38 @@
-/**
+/*!
+ * Core component
+ *
  * Copyright 2016 Achraf Chouk
  * Achraf Chouk (https://github.com/crewstyle)
- *
- * 01.global.less
  */
 
-h1, h2, h3 {
-    font-weight: 200;
+/*! 01.global */
 
-    strong {
-        font-weight: 400;
-    }
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 38px;
-    line-height: 46px;
-    margin: 0;
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
-hr {
-    border-bottom: 1px solid @graylighter;
+html, body {
+    height: auto;
+    max-width: initial;
+}
+
+html,
+#wp-content-editor-tools {
+    background-color: @bodycolor;
+}
+
+body {
+    background: @bodycolor;
+}
+
+.spinner {
+    margin-top: 11px;
 }

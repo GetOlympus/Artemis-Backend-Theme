@@ -1,0 +1,66 @@
+/*! 13.admin.user */
+
+// default display
+
+#wpadminbar .ab-top-secondary {
+    float: right;
+}
+
+// submenu
+
+#wpadminbar #wp-admin-bar-my-account {
+    #wp-admin-bar-user-actions {
+        background-color: @dropdownbackgroundcolor;
+        color: @dropdowncolor;
+        font-size: @dropdownfontsize;
+        padding: @dropdownpadding;
+
+        li {
+            margin: 0 26px;
+            text-align: center;
+
+            a {
+                background-color: @dropdownbackgroundcolor;
+                color: @dropdowncolor;
+
+                &:focus, &:hover {
+                    background-color: @dropdownhoverbackgroundcolor;
+                    color: @dropdownhovercolor;
+                }
+            }
+
+            span {
+                height: auto;
+            }
+        }
+    }
+
+    &.with-avatar #wp-admin-bar-user-actions {
+        padding-left: 90px;
+        position: relative;
+
+        #wp-admin-bar-user-info .avatar {
+            position: absolute;
+            left: 13px;
+            top: 50%;
+
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+}
+
+/*#wp-admin-bar-user-info {
+    .avatar {
+        position: static;
+    }
+
+    span, a {
+        height: auto;
+    }
+
+    span {
+        line-height: 26px;
+    }
+}*/

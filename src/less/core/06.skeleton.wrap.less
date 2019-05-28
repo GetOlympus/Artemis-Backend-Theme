@@ -1,0 +1,27 @@
+/*! 06.skeleton.wrap */
+
+.wrap {
+    margin-left: @bodypadding;
+
+    .add-new-h2,
+    .add-new-h2:active,
+    .page-title-action,
+    .page-title-action:active {
+        background: fade(@primarycolor, 5%);
+        border: none;
+        border-radius: @defaultborderradius;
+        color: @primarycolor;
+        font-weight: 200;
+        padding: 6px 14px;
+        vertical-align: middle;
+
+        -webkit-transition: @defaulttransition;
+        -moz-transition: @defaulttransition;
+        transition: @defaulttransition;
+
+        &:focus, &.focus, &:hover, &.hover {
+            background: fade(@primarycolor, 30%);
+            color: @primarycolor;
+        }
+    }
+}

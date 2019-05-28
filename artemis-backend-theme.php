@@ -53,7 +53,6 @@ if (!defined('ABSPATH')) {
 
 // Directory separator
 defined('S')                    or define('S', DIRECTORY_SEPARATOR);
-
 // Admin panel or not, constant defined in main Olympus framework (mu-plugins autoloaded)
 defined('OL_ISADMIN')           or define('OL_ISADMIN', is_admin());
 // Vendor package, constant defined in main Olympus framework
@@ -67,10 +66,6 @@ defined('VENDORPATH')           or define('VENDORPATH', realpath(dirname(__DIR__
 define('OL_ARTEMIS_DICTIONARY', 'olympus-artemis');
 // Resources path.
 define('OL_ARTEMIS_RESOURCESPATH', realpath(dirname(__FILE__)).S.'resources'.S);
-// Configurations path
-define('OL_ARTEMIS_CONFIGSPATH', OL_ARTEMIS_RESOURCESPATH.'configs'.S);
-// Controllers path
-define('OL_ARTEMIS_CONTROLLERSPATH', OL_ARTEMIS_RESOURCESPATH.'controllers'.S);
 
 /**
  * ArtemisBackendTheme class
@@ -89,59 +84,13 @@ if (!class_exists('ArtemisBackendTheme')) {
                 include $autoload;
             }
 
-            /**
-             * Start working here.
-             */
-
-            /**
-             * Initialize configurations
-             *
-             * Add configuration you need to iniitlaize.
-             * You can init 5 kinds of configurators:
-             *
-             * - AdminThemesConfiguration able to add login and register custimzations
-             * - AccessManagementConfiguration able to add custom admin CSS
-             * - MenusConfiguration able to add custom menus navigation
-             * - SettingsConfiguration able to add custom backend and frontend settings
-             * - ShortcodesConfiguration able to add custom shortcodes
-             * - SidebarsConfiguration able to add custom sidebars and widgets areas
-             * - SizesConfiguration able to add custom media sizes
-             * - SupportsConfiguration able to add post types and themes supports
-             *
-             * @param array $args
-             */
+            // Initialize configurations
             $this->configurations = [
-                // Alias to load                => File path to associate
-                'AdminThemesConfiguration'      => OL_ARTEMIS_CONFIGSPATH.'admin-themes.php',
-                'AccessManagementConfiguration' => OL_ARTEMIS_CONFIGSPATH.'access-management.php',
-            ];
-
-            /**
-             * Initialize custom components.
-             *
-             * Add simply here all your required folders.
-             * Hera application will load classes as a map
-             * and initialize them.
-             * You can init all kinds of objects:
-             *
-             * - adminpages which contains all custom admin pages
-             * - extras which contains all custom extra datas such as user or comment details
-             * - posttypes which contains all your custom post types
-             * - terms which contains all your custom terms and taxonomies
-             * - widgets which contains all your custom widgets
-             * - and more coming soon...
-             *
-             * @param array $args
-             */
-            $this->paths = [
-                // Action to make   => Array of File paths to associate
-                'admin_menu'        => [
-                    OL_ARTEMIS_CONTROLLERSPATH.'adminpages',
-                ],
+                'AdminThemesConfiguration' => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'admin-themes.php',
             ];
         }
     }
 }
 
 // Instanciate ArtemisBackendTheme
-new ArtemisBackendTheme();
+return new ArtemisBackendTheme();
