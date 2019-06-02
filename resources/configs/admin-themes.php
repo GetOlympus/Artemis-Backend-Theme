@@ -9,6 +9,13 @@
  * @since    0.0.1
  */
 
+/**
+ * Reccursive function to get real color
+ */
+function getRealColor($value, $contents) {
+    return "@" === substr($value, 0, 1) ? getRealColor($contents[substr($value, 1)], $contents) : $value;
+}
+
 // Generate CSS file path
 $rootpath = dirname(OL_ARTEMIS_RESOURCESPATH);
 $csspath = basename($rootpath).S.'resources'.S.'assets'.S.'css'.S;
@@ -45,19 +52,19 @@ foreach (new DirectoryIterator($rootpath.S.'src'.S.'configs') as $jsonfile) {
             'url'    => WP_PLUGIN_URL.S.$csspath.$filename.'.min.css',
             // An array of CSS color definition strings which are used to give the user a feel for the theme.
             'colors' => [
-                $contents['sidebarbackgroundcolor'],
-                $contents['primarycolor'],
-                $contents['secondarycolor'],
-                $contents['bodycolor'],
+                getRealColor($contents['adminbarbackgroundcolor'], $contents),
+                getRealColor($contents['primarycolor'], $contents),
+                getRealColor($contents['secondarycolor'], $contents),
+                getRealColor($contents['linkcolor'], $contents),
             ],
             // CSS color definitions used to color any SVG icons.
             'icons'  => [
                 // SVG icon base color.
-                'base'    => $contents['iconbase'],
+                'base'    => getRealColor($contents['iconbase'], $contents),
                 // SVG icon color on focus.
-                'focus'   => $contents['iconfocus'],
+                'focus'   => getRealColor($contents['iconfocus'], $contents),
                 // SVG icon color of current admin menu link.
-                'current' => $contents['iconcurrent'],
+                'current' => getRealColor($contents['iconfocus'], $contents),
             ],
         ]
     ]);

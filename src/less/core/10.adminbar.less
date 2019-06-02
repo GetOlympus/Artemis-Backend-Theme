@@ -1,6 +1,9 @@
 /*! 10.adminbar */
 
+// admin bar
+
 #wpadminbar {
+    background-color: @adminbarbackgroundcolor;
     box-sizing: border-box;
     height: @adminbarheight;
     padding-left: @sidebarwidth;
@@ -10,33 +13,61 @@
     }
 
     &:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+    .menupop .ab-sub-wrapper,
     .ab-top-menu > li.hover > .ab-item {
-        background-color: lighten(@blackcolor, 10%);
+        background-color: @adminbarhoverbackgroundcolor;
+        color: @adminbarhovercolor;
     }
 
     .menupop .ab-sub-wrapper {
-        background-color: lighten(@blackcolor, 10%);
-    }
-}
-
-/*#wpadminbar {
-    .shortlink-input {
-        height: @adminbarheight;
-    }
-
-    .ab-top-menu > li.hover > .ab-item,
-    .menupop .ab-sub-wrapper, .shortlink-input,
-    &:not(.mobile) .ab-top-menu > li:hover > .ab-item,
-    .ab-top-menu > li.hover > .ab-item {
-        background-color: lighten(@blackcolor, 10%);
+        background-color: @adminbarhoverbackgroundcolor;
+        color: @adminbarhovercolor;
     }
 
     .ab-empty-item,
+    a.ab-item,
     > #wp-toolbar span.ab-label,
-    > #wp-toolbar span.noticon,
+    > #wp-toolbar span.noticon {
+        color: @adminbarcolor;
+    }
+
     .ab-icon:before,
     .ab-item:before,
     #adminbarsearch:before {
-        color: @dropdownbackgroundcolor;
+        color: @adminbarcolor;
     }
-}*/
+
+    .menupop .ab-sub-wrapper,
+    .shortlink-input {
+        box-shadow: @dropdownboxshadow;
+    }
+}
+
+// hover states
+
+#wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
+#wpadminbar > #wp-toolbar li.hover span.ab-label,
+#wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label,
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar li a:focus .ab-icon:before,
+#wpadminbar li .ab-item:focus:before,
+#wpadminbar li .ab-item:focus .ab-icon:before,
+#wpadminbar li.hover .ab-icon:before,
+#wpadminbar li.hover .ab-item:before,
+#wpadminbar li:hover #adminbarsearch:before,
+#wpadminbar li #adminbarsearch.adminbar-focused:before {
+    color: @adminbarhovercolor;
+}
+
+// folded admin bar
+
+.folded #wpadminbar {
+    padding-left: 36px;
+}
+
+@media (max-width: 960px) {
+    body.auto-fold #wpadminbar {
+        padding-left: 36px;
+    }
+}

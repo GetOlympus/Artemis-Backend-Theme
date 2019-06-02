@@ -1,19 +1,81 @@
 /*! 25.navs */
 
-h2.nav-tab-wrapper {
-    background: @whitecolor;
-    padding: 9px 2% 0;
+// wrapper
+
+.wrap .nav-tab-wrapper {
+    background-color: @whitecolor;
+    border-bottom: 0;
+    margin-top: 10px;
+    width: 100%;
 
     .nav-tab {
-        margin-left: 0;
-        margin-right: 7px;
+        margin: 0;
+        padding: 0 12px 6px;
+        border: none;
+        background: none;
+
+        &.nav-tab-active,
+        &.nav-tab-active:focus,
+        &.nav-tab-active:focus:active,
+        &.nav-tab-active:hover,
+        &:hover {
+            background-color: transparent;
+            border-bottom: 1px solid @buttonsecondarybackgroundcolor;
+            color: @buttonsecondarybackgroundcolor;
+            text-decoration: @linkhovertextdecoration;
+        }
+    }
+}
+
+// lists
+
+ul.category-tabs,
+#side-sortables .add-menu-item-tabs,
+.wp-tab-bar {
+    margin-bottom: 0;
+
+    li {
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 8px 12px 9px;
     }
 
-    .nav-tab-active,
-    .nav-tab-active:focus,
-    .nav-tab-active:focus:active,
-    .nav-tab-active:hover {
-        background: lighten(@blackcolor, 70%);
-        border-bottom-color: lighten(@blackcolor, 70%);
+    a.nav-tab-link {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        position: relative;
+        text-indent: -9999px;
+        width: 20px;
+
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        &:before {
+            font: normal 20px/1 dashicons;
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            left: 0;
+            speak: none;
+            text-indent: 0;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        &[data-type$="-pop"]:before,
+        &[data-type$="-most-recent"]:before {
+            content: "\f463";
+        }
+
+        &[data-type$="-all"]:before {
+            content: "\f203";
+        }
+
+        &[data-type$="-search"]:before {
+            content: "\f179";
+        }
     }
 }

@@ -1,8 +1,6 @@
-/*! 12.admin.menu.collapse */
+/*! 14.adminmenu.collapse */
 
 #adminmenu li#collapse-menu {
-    background-color: fade(@adminbarcolor, 15%);
-
     #collapse-button {
         color: @adminbarcolor;
         padding: 0 10px;
@@ -20,6 +18,16 @@
 
 .folded #adminmenu {
     li#collapse-menu #collapse-button {
+        padding: 0;
+
+        .collapse-button-label {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .auto-fold #adminmenu li#collapse-menu #collapse-button {
         padding: 0;
 
         .collapse-button-label {

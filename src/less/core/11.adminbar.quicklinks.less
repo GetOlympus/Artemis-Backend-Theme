@@ -1,0 +1,34 @@
+/*! 11.adminbar.quicklinks */
+
+#wpadminbar .quicklinks {
+    .menupop ul.ab-sub-secondary {
+        background-color: @adminbarhoverbackgroundcolor;
+    }
+
+    .ab-empty-item, a {
+        height: @adminbarheight;
+    }
+
+    .menupop ul li a,
+    .menupop.hover ul li a {
+        color: @adminbarcolor;
+
+        &:focus, &:hover {
+            color: @adminbarhovercolor;
+        }
+    }
+}
+
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover,
+#wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus {
+    color: @adminbarhovercolor;
+}

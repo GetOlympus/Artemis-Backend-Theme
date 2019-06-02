@@ -1,35 +1,44 @@
 /*! 60.theme */
 
-// Theme switcher
+// globals
 
-.theme-browser .theme .theme-actions {
-    padding: 4px 10px 5px;
+.theme-browser .theme .theme-name {
+    height: auto;
 }
 
-// Theme customizer
+// theme switcher
 
-#customize-header-actions .button-primary {
-    margin-top: 4px;
+.theme-browser .theme.add-new-theme a {
+    &:after,
+    span:after,
+    .theme-name {
+        -webkit-transition: @buttonsecondarytransition;
+        -moz-transition: @buttonsecondarytransition;
+        transition: @buttonsecondarytransition;
+    }
+
+    &:focus, &:hover {
+        &:after {
+            background: @buttonsecondarybackgroundcolor;
+            color: @buttonsecondarycolor;
+        }
+
+        span:after {
+            background: @buttonsecondarycolor;
+            color: @buttonsecondarybackgroundcolor;
+        }
+
+        .theme-name {
+            color: @buttonsecondarycolor;
+        }
+    }
 }
-.customize-control-background .default-button,
-.customize-control-background .remove-button,
-.customize-control-background .upload-button,
-.customize-control-cropped_image .default-button,
-.customize-control-cropped_image .remove-button,
-.customize-control-cropped_image .upload-button,
-.customize-control-header button.new,
-.customize-control-header button.remove,
-.customize-control-image .default-button,
-.customize-control-image .remove-button,
-.customize-control-image .upload-button,
-.customize-control-media .default-button,
-.customize-control-media .remove-button,
-.customize-control-media .upload-button,
-.customize-control-site_icon .default-button,
-.customize-control-site_icon .remove-button,
-.customize-control-site_icon .upload-button,
-.customize-control-upload .default-button,
-.customize-control-upload .remove-button,
-.customize-control-upload .upload-button {
-    width: auto;
+
+// customizer
+
+.customize-controls-close {
+    &:hover {
+        border-top: 4px solid #eee;
+        text-decoration: none;
+    }
 }

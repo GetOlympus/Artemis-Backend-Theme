@@ -1,14 +1,19 @@
 /*! 70.widget */
 
+.widgets-holder-wrap {
+    background-color: fade(@boxbackgroundcolor, 50%);
+    border: @boxborder;
+    border-radius: @boxborderradius;
+    box-shadow: @boxboxshadow;
+}
+
+.widget .widget-top {
+    background-color: @boxbackgroundcolor;
+    border: @boxborder;
+    border-radius: @boxborderradius;
+    box-shadow: @boxboxshadow;
+}
+
 .widget-control-actions {
-    padding-top: 15px;
     line-height: 30px;
-}
-
-.widget-content .olh-field {
-    margin: 13px 0;
-}
-
-.widget-content .olh-field p.description {
-    padding: 0;
 }

@@ -1,0 +1,84 @@
+/*! 71.menu */
+
+// wrapper
+
+#nav-menu-header,
+#nav-menu-footer {
+    background-color: fade(@boxbackgroundcolor, 50%);
+    border-bottom: @boxborder;
+}
+
+// menus
+
+.manage-menus {
+    background-color: fade(@boxbackgroundcolor, 50%);
+    border: @boxborder;
+    border-radius: @boxborderradius;
+    box-shadow: @boxboxshadow;
+}
+
+// accordeon
+
+.accordion-section {
+    box-shadow: @boxboxshadow;
+}
+
+.js .control-section.open .accordion-section-title {
+    background-color: fade(@boxbackgroundcolor, 50%);
+    border-bottom: @boxborder;
+}
+
+// menu content
+
+#menu-settings-column .inside {
+    margin: 0;
+}
+
+// widgets
+
+.menu-item-bar .menu-item-handle,
+.menu-item-settings {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.menu-item-bar .menu-item-handle {
+    background-color: @boxbackgroundcolor;
+    border: @boxborder;
+    border-radius: @boxborderradius;
+    box-shadow: @boxboxshadow;
+}
+
+// link widget
+
+.customlinkdiv .menu-item-textbox {
+    float: none;
+    width: 100%;
+}
+
+// content
+
+.menu-item-settings {
+    font-size: 0;
+    padding: 10px;
+    width: 392px;
+
+    .description, .submitbox {
+        font-size: 12px;
+    }
+
+    .description-thin,
+    .description-wide {
+        float: none;
+        margin: 3px 0 5px;
+        width: 100%;
+    }
+
+    .description-thin {
+        display: inline-block;
+        margin: 3px .5% 5px;
+        vertical-align: bottom;
+        width: 49%;
+    }
+}

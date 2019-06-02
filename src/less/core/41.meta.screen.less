@@ -1,0 +1,36 @@
+/*! 41.meta.screen */
+
+// container
+
+#screen-meta {
+    background-color: @boxbackgroundcolor;
+    border: @boxborder;
+    border-top: none;
+    box-shadow: @boxboxshadow;
+}
+
+// screen meta links
+
+#screen-meta-links .show-settings {
+    background-color: @boxbackgroundcolor;
+    border: @boxborder;
+    border-radius: 0 0 @buttonborderradius @buttonborderradius;
+    box-shadow: @boxboxshadow;
+    color: @boxcolor;
+    text-transform: none;
+}
+
+// content
+
+#contextual-help-back {
+    background: fade(@infocolor, 10%);
+}
+
+.contextual-help-tabs .active {
+    background: fade(@infocolor, 10%);
+    border-left-color: @infocolor;
+
+    a {
+        color: @infocolor;
+    }
+}

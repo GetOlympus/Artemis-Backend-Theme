@@ -1,4 +1,4 @@
-/*! 13.admin.user */
+/*! 13.adminmenu.user */
 
 // default display
 
@@ -9,6 +9,10 @@
 // submenu
 
 #wpadminbar #wp-admin-bar-my-account {
+    .ab-sub-wrapper {
+        box-shadow: @dropdownboxshadow;
+    }
+
     #wp-admin-bar-user-actions {
         background-color: @dropdownbackgroundcolor;
         color: @dropdowncolor;
@@ -39,6 +43,11 @@
         padding-left: 90px;
         position: relative;
 
+        > li {
+            margin-left: 0;
+            position: static;
+        }
+
         #wp-admin-bar-user-info .avatar {
             position: absolute;
             left: 13px;
@@ -50,17 +59,3 @@
         }
     }
 }
-
-/*#wp-admin-bar-user-info {
-    .avatar {
-        position: static;
-    }
-
-    span, a {
-        height: auto;
-    }
-
-    span {
-        line-height: 26px;
-    }
-}*/

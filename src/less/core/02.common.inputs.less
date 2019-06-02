@@ -1,0 +1,208 @@
+/*! 02.global.inputs */
+
+// globals
+
+.wp-core-ui,
+.wp-filter .search-form,
+.editor-post-permalink,
+.edit-post-sidebar,
+.editor-post-publish-panel,
+.block-editor-block-list__block,
+.components-popover,
+.components-modal__content,
+.js.plugins-php .search-box {
+    .input-control,
+    input[type="text"],
+    input[type="password"],
+    input[type="checkbox"],
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="search"],
+    input[type="search"].block-editor-inserter__search,
+    input[type="search"].wp-filter-search,
+    input[type="radio"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select,
+    textarea {
+        background-color: @inputbackgroundcolor;
+        border: @inputborder;
+        border-radius: @inputborderradius;
+        box-shadow: @inputboxshadow;
+        color: @inputcolor;
+        font-size: @inputfontsize;
+        outline: none;
+        padding: @inputpadding;
+        vertical-align: middle;
+
+        -webkit-transition: @inputtransition;
+        -moz-transition: @inputtransition;
+        transition: @inputtransition;
+
+        &:focus {
+            background-color: @inputfocusbackgroundcolor;
+            border: @inputfocusborder;
+            border-radius: @inputfocusborderradius;
+            box-shadow: @inputfocusboxshadow;
+            color: @inputfocuscolor;
+            font-size: @inputfocusfontsize;
+            outline: none;
+            padding: @inputfocuspadding;
+        }
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        background-color: @inputbackgroundcolor;
+        border: @inputborder;
+        box-shadow: @inputboxshadow;
+        color: @inputcolor;
+        clear: none;
+        cursor: pointer;
+        display: inline-block;
+        height: 16px;
+        line-height: 0;
+        margin: -4px 4px 0 0;
+        min-width: 16px;
+        outline: 0;
+        padding: 0 !important;
+        text-align: center;
+        vertical-align: middle;
+        width: 16px;
+
+        -webkit-appearance: none;
+
+        -webkit-transition: @inputtransition;
+        -moz-transition: @inputtransition;
+        transition: @inputtransition;
+
+        &:checked {
+            background-color: @inputbackgroundcolor !important;
+            border: @inputborder !important;
+            color: @inputcolor !important;
+        }
+    }
+
+    input[type="radio"] {
+        border-radius: 50%;
+
+        &:focus {
+            border-radius: 50%;
+        }
+    }
+
+    input.readonly, input[readonly],
+    textarea.readonly, textarea[readonly] {
+        background-color: darken(@inputbackgroundcolor, 10%);
+    }
+
+    .block-editor-block-list__layout {
+        input.readonly, input[readonly],
+        textarea.readonly, textarea[readonly] {
+            background-color: @whitecolor;
+        }
+    }
+
+    input[type="radio"]:checked + label:before {
+        color: @inputcolor;
+    }
+
+    input[type="checkbox"]:checked:before {
+        color: @inputcolor;
+        margin: -4px 0 0 -5px;
+    }
+
+    input[type="radio"]:checked:before {
+        background-color: @inputcolor;
+        margin: 3px 4px 4px 3px;
+    }
+
+    input[type="reset"] {
+        &:hover, &:active {
+            color: @inputcolor;
+        }
+    }
+}
+
+.components-form-token-field__input-container {
+    background-color: @inputbackgroundcolor;
+    border: @inputborder;
+    border-radius: @inputborderradius;
+    box-shadow: @inputboxshadow;
+    color: @inputcolor;
+    font-size: @inputfontsize;
+    outline: none;
+    padding: @inputpadding;
+    vertical-align: middle;
+
+    -webkit-transition: @inputtransition;
+    -moz-transition: @inputtransition;
+    transition: @inputtransition;
+
+    &.is-active {
+        background-color: @inputfocusbackgroundcolor;
+        border: @inputfocusborder;
+        border-radius: @inputfocusborderradius;
+        box-shadow: @inputfocusboxshadow;
+        color: @inputfocuscolor;
+        font-size: @inputfocusfontsize;
+        outline: none;
+        padding: @inputfocuspadding;
+    }
+
+    input[type="text"].components-form-token-field__input {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+
+        &:focus {
+            background-color: transparent;
+            border: none;
+            box-shadow:;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: @inputcolor;
+}
+
+::-moz-placeholder {
+    color: @inputcolor;
+}
+
+:-ms-input-placeholder {
+    color: @inputcolor;
+}
+
+.form-invalid input, .form-invalid input:focus,
+.form-invalid select, .form-invalid select:focus {
+    border-color: @errorcolor !important;
+    box-shadow: @inputboxshadow;
+}
+
+// Guttenberg title
+
+.editor-post-title__block .editor-post-title__input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 2.441em;
+    padding: 19px 14px;
+
+    &:focus {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        font-size: 2.441em;
+        padding: 19px 14px;
+    }
+}

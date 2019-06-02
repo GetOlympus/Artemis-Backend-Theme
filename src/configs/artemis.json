@@ -14,22 +14,23 @@
   "errorcolor": "#e74c3c",
   "successcolor": "#99d537",
 
+  "defaultbordercolor": "@secondarycolor",
   "defaultborderradius": "3px",
   "defaulttransition": "all .250s ease",
   "defaultsidebarwidth": "200px",
 
 
 
-  "bodycolor": "@whitecolor",
+  "bodybackgroundcolor": "@whitecolor",
   "bodypadding": "20px",
 
 
 
-  "linkcolor": "darken(@primarycolor, 20%)",
+  "linkcolor": "#1387ba",
   "linktextdecoration": "none",
   "linktexttransform": "none",
 
-  "linkhovercolor": "darken(@primarycolor, 30%)",
+  "linkhovercolor": "darken(@linkcolor, 20%)",
   "linkhovertextdecoration": "none",
   "linkhovertexttransform": "none",
 
@@ -77,6 +78,7 @@
   "sidebarwidth": "@defaultsidebarwidth",
 
   "dropdownbackgroundcolor": "@blackcolor",
+  "dropdownboxshadow": "0 3px 5px fade(@blackcolor, 2%)",
   "dropdowncolor": "@secondarycolor",
   "dropdownhoverbackgroundcolor": "@blackcolor",
   "dropdownhovercolor": "@primarycolor",
@@ -87,9 +89,30 @@
 
 
 
-  "boxbackgroundcolor": "rgba(24,26,33,.015)",
-  "boxcolor": "@blackcolor",
+  "boxcontainerbackgroundcolor": "rgba(24,26,33,.015)",
+  "boxcontainerborder": "none",
+  "boxcontainerborderradius": "@defaultborderradius",
+  "boxcontainerboxshadow": "0 1px 1px fade(@blackcolor, 0.4%)",
+  "boxcontainercolor": "@blackcolor",
+  "boxcontainerpadding": "0",
+
+  "boxheadercolor": "@blackcolor",
+  "boxheaderfontsize": "1rem",
+  "boxheaderfontweight": "400",
+  "boxheaderletterspacing": ".02em",
+  "boxheaderlineheight": "24px",
+  "boxheadermargin": "0 0 20px",
+  "boxheaderpadding": "8px 12px",
+  "boxheadertextalign": "left",
+  "boxheadertexttransform": "none",
+
+  "boxbackgroundcolor": "transparent",
+  "boxborder": "none",
+  "boxborderradius": "0",
+  "boxboxshadow": "none",
+  "boxcolor": "@boxcontainercolor",
   "boxfontsize": "14px",
+  "boxpadding": "16px",
 
 
 
@@ -174,6 +197,16 @@
   "buttonsecondaryhovertexttransform": "@buttonhovertextshadow",
 
   "buttonsecondarytransition": "@buttontransition",
+
+
+
+  "buttonheroboxshadow": "@buttonprimaryboxshadow",
+  "buttonherofontsize": "14px",
+  "buttonheropadding": "12px 36px",
+
+  "buttonherohoverboxshadow": "@buttonprimaryhoverboxshadow",
+  "buttonherohoverfontsize": "@buttonherofontsize",
+  "buttonherohoverpadding": "@buttonheropadding",
 
 
 

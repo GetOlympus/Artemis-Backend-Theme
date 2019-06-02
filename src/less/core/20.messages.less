@@ -1,17 +1,42 @@
 /*! 20.messages */
 
-.notice,
-#update-nag,
-.update-nag,
-div.updated,
-div.error {
-    background-color: fade(@sidebarhoverbackgroundcolor, 2.5%);
+// info
+
+.notice-info, div.info {
+    background-color: fade(@infocolor, 7.5%);
+    border-color: @infocolor;
     border-radius: @defaultborderradius;
+    color: @infocolor;
 }
 
-#update-nag,
-.update-nag {
-    display: block;
-    margin: 25px 4px 0 2px;
+// success
+
+.components-notice.is-success,
+.notice-success, div.updated {
+    background-color: fade(@successcolor, 7.5%);
+    border-color: @successcolor;
+    border-radius: @defaultborderradius;
+    color: @successcolor;
 }
 
+.components-notice.is-success {
+    border-radius: 0;
+}
+
+// warning
+
+.notice-warning, div.warning {
+    background-color: fade(@warningcolor, 7.5%);
+    border-color: @warningcolor;
+    border-radius: @defaultborderradius;
+    color: @warningcolor;
+}
+
+// error
+
+.notice-error, div.error {
+    background-color: fade(@errorcolor, 7.5%);
+    border-color: @errorcolor;
+    border-radius: @defaultborderradius;
+    color: @errorcolor;
+}

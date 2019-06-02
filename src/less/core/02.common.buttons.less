@@ -1,0 +1,301 @@
+/*! 02.common.buttons */
+
+// globals
+
+.wp-core-ui .button {
+    background-color: @buttonbackgroundcolor;
+    background-image: @buttonbackgroundimage;
+    border: @buttonborder;
+    border-radius: @buttonborderradius;
+    box-shadow: @buttonboxshadow;
+    color: @buttoncolor;
+    font-size: @buttonfontsize;
+    padding: @buttonpadding;
+    text-shadow: @buttontextshadow;
+    text-transform: @buttontexttransform;
+    vertical-align: middle;
+
+    -webkit-transition: @buttontransition;
+    -moz-transition: @buttontransition;
+    transition: @buttontransition;
+
+    &:disabled, &.disabled, &[aria-disabled="true"] {
+        background-color: fade(@buttonbackgroundcolor, 50%);
+        color: fade(@buttoncolor, 50%);
+    }
+
+    &:focus, &.focus, &:hover, &.hover {
+        background-color: @buttonhoverbackgroundcolor;
+        background-image: @buttonhoverbackgroundimage;
+        border: @buttonhoverborder;
+        border-radius: @buttonhoverborderradius;
+        box-shadow: @buttonhoverboxshadow;
+        color: @buttonhovercolor;
+        font-size: @buttonhoverfontsize;
+        padding: @buttonhoverpadding;
+        text-shadow: @buttonhovertextshadow;
+        text-transform: @buttonhovertexttransform;
+        vertical-align: middle;
+    }
+}
+
+.wp-core-ui .button.button-primary {
+    background-color: @buttonprimarybackgroundcolor;
+    background-image: @buttonprimarybackgroundimage;
+    border: @buttonprimaryborder;
+    border-radius: @buttonprimaryborderradius;
+    box-shadow: @buttonprimaryboxshadow;
+    color: @buttonprimarycolor;
+    font-size: @buttonprimaryfontsize;
+    padding: @buttonprimarypadding;
+    text-shadow: @buttonprimarytextshadow;
+    text-transform: @buttonprimarytexttransform;
+    vertical-align: middle;
+
+    -webkit-transition: @buttonprimarytransition;
+    -moz-transition: @buttonprimarytransition;
+    transition: @buttonprimarytransition;
+
+    &:disabled, &[disabled], &.disabled, &[aria-disabled="true"], &-disabled {
+        background-color: fade(@buttonprimarybackgroundcolor, 50%) !important;
+        border: @buttonprimaryborder !important;
+        color: fade(@buttonprimarycolor, 50%) !important;
+    }
+
+    &:focus, &.focus, &:hover, &.hover {
+        background-color: @buttonprimaryhoverbackgroundcolor;
+        background-image: @buttonprimaryhoverbackgroundimage;
+        border: @buttonprimaryhoverborder;
+        border-radius: @buttonprimaryhoverborderradius;
+        box-shadow: @buttonprimaryhoverboxshadow;
+        color: @buttonprimaryhovercolor;
+        font-size: @buttonprimaryhoverfontsize;
+        padding: @buttonprimaryhoverpadding;
+        text-shadow: @buttonprimaryhovertextshadow;
+        text-transform: @buttonprimaryhovertexttransform;
+        vertical-align: middle;
+    }
+}
+
+.wp-core-ui .button.button-secondary {
+    background-color: @buttonsecondarybackgroundcolor;
+    background-image: @buttonsecondarybackgroundimage;
+    border: @buttonsecondaryborder;
+    border-radius: @buttonsecondaryborderradius;
+    box-shadow: @buttonsecondaryboxshadow;
+    color: @buttonsecondarycolor;
+    font-size: @buttonsecondaryfontsize;
+    padding: @buttonsecondarypadding;
+    text-shadow: @buttonsecondarytextshadow;
+    text-transform: @buttonsecondarytexttransform;
+    vertical-align: middle;
+
+    -webkit-transition: @buttonsecondarytransition;
+    -moz-transition: @buttonsecondarytransition;
+    transition: @buttonsecondarytransition;
+
+    &:disabled, &.disabled, &[aria-disabled="true"] {
+        background-color: fade(@buttonsecondarybackgroundcolor, 50%);
+        color: fade(@buttonsecondarycolor, 50%);
+    }
+
+    &:focus, &.focus, &:hover, &.hover {
+        background-color: @buttonsecondaryhoverbackgroundcolor;
+        background-image: @buttonsecondaryhoverbackgroundimage;
+        border: @buttonsecondaryhoverborder;
+        border-radius: @buttonsecondaryhoverborderradius;
+        box-shadow: @buttonsecondaryhoverboxshadow;
+        color: @buttonsecondaryhovercolor;
+        font-size: @buttonsecondaryhoverfontsize;
+        padding: @buttonsecondaryhoverpadding;
+        text-shadow: @buttonsecondaryhovertextshadow;
+        text-transform: @buttonsecondaryhovertexttransform;
+        vertical-align: middle;
+    }
+}
+
+// default vertical align
+
+.wp-core-ui p .button {
+    vertical-align: middle;
+}
+
+// hero button
+
+.wp-core-ui .button,
+.wp-core-ui .button.button-primary,
+.wp-core-ui .welcome-panel .button.button-primary,
+.wp-core-ui .button.button-secondary {
+    &.button-hero {
+        box-shadow: @buttonheroboxshadow;
+        font-size: @buttonherofontsize;
+        line-height: 1.4285714;
+        padding: @buttonheropadding;
+        white-space: normal;
+
+        &:focus, &.focus, &:hover, &.hover {
+            box-shadow: @buttonherohoverboxshadow;
+            font-size: @buttonherohoverfontsize;
+            padding: @buttonherohoverpadding;
+        }
+    }
+}
+
+// WYSIWYG buttons
+
+.wp-core-ui .wp-media-buttons .button.insert-media {
+    padding: @buttonpadding;
+}
+
+.wp-core-ui .quicktags-toolbar input.button.button-small {
+    background-color: fade(@boxbackgroundcolor, 50%);
+    border-color: 1px solid @boxcolor;
+    box-shadow: none;
+    color: @boxcolor;
+    padding: 1px 8px;
+    text-transform: none;
+
+    &:focus, &:hover {
+        background-color: fade(@boxbackgroundcolor, 95%);
+        border-color: 1px solid @blackcolor;
+        box-shadow: none;
+        color: @blackcolor;
+        padding: 1px 8px;
+        text-transform: none;
+    }
+}
+
+.wp-core-ui .button.active {
+    background-color: @buttonprimarybackgroundcolor;
+}
+
+// post Guttenberg buttons
+
+.components-button,
+.components-button.is-default,
+.components-button.is-tertiary,
+.components-panel__body-toggle.components-button {
+    background-color: @boxbackgroundcolor;
+    border: @boxborder;
+    border-radius: @boxborderradius;
+    box-shadow: @boxboxshadow;
+    color: @boxcolor;
+    text-shadow: none;
+    text-transform: @buttontexttransform;
+
+    &:disabled, &.disabled, &[aria-disabled="true"] {
+        background-color: fade(@boxbackgroundcolor, 50%);
+        border: @boxborder;
+        color: @boxcolor;
+    }
+
+    &.editor-post-trash {
+        color: @errorcolor;
+
+        &:disabled, &.disabled, &[aria-disabled="true"] {
+            color: @errorcolor;
+        }
+    }
+
+    &:focus, &.focus, &:hover, &.hover {
+        background-color: darken(@boxbackgroundcolor, 10%);
+        border: @boxborder;
+        box-shadow: @boxboxshadow;
+        color: @boxcolor;
+    }
+}
+
+.components-menu-item__button:focus:not(:disabled):not([aria-disabled="true"]),
+.components-menu-item__button.components-icon-button:focus:not(:disabled):not([aria-disabled="true"]) {
+    background-color: darken(@boxbackgroundcolor, 10%);
+    border: @boxborder;
+    box-shadow: @boxboxshadow;
+    color: @boxcolor;
+    text-transform: @buttontexttransform;
+}
+
+.components-button.is-primary {
+    background-color: @buttonprimarybackgroundcolor;
+    background-image: @buttonprimarybackgroundimage;
+    border: @buttonprimaryborder;
+    border-radius: @buttonprimaryborderradius;
+    box-shadow: @buttonprimaryboxshadow;
+    color: @buttonprimarycolor;
+    text-shadow: @buttonprimarytextshadow;
+    text-transform: @buttonprimarytexttransform;
+
+    &:disabled, &.disabled, &[aria-disabled="true"] {
+        background-color: fade(@buttonprimarybackgroundcolor, 50%);
+        border: @buttonprimaryborder;
+        color: @buttonprimarycolor;
+    }
+
+    &:focus, &.focus, &:hover, &.hover {
+        background-color: @buttonprimaryhoverbackgroundcolor;
+        border: @buttonprimaryborder;
+        box-shadow: @buttonprimaryboxshadow;
+        color: @buttonprimaryhovercolor;
+    }
+}
+
+.edit-post-header .components-button.is-toggled {
+    background-color: @buttonsecondarybackgroundcolor;
+    background-image: @buttonsecondarybackgroundimage;
+    border: @buttonsecondaryborder;
+    border-radius: @buttonsecondaryborderradius;
+    box-shadow: @buttonsecondaryboxshadow;
+    color: @buttonsecondarycolor;
+    text-shadow: @buttonsecondarytextshadow;
+    text-transform: @buttonsecondarytexttransform;
+
+    &:disabled, &.disabled, &[aria-disabled="true"] {
+        background-color: fade(@buttonsecondarybackgroundcolor, 50%);
+        border: @buttonsecondaryborder;
+        color: @buttonsecondarycolor;
+    }
+
+    &:focus, &.focus, &:hover, &.hover {
+        background-color: @buttonsecondaryhoverbackgroundcolor;
+        border: @buttonsecondaryborder;
+        box-shadow: @buttonsecondaryboxshadow;
+        color: @buttonsecondaryhovercolor;
+    }
+}
+
+// wp color button
+
+.wp-picker-container .wp-color-result.button {
+    border-radius: 0;
+    box-shadow: none;
+
+    &:focus, &.focus, &:hover, &.hover {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+// filter bar button
+
+.wp-filter .drawer-toggle,
+.wp-filter .button.drawer-toggle {
+    &:focus, &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+        padding: 0 10px 0 6px;
+        vertical-align: baseline;
+    }
+}
+
+// media display
+
+@media (min-width: 782px) {
+    .components-menu-item__button:hover:not(:disabled):not([aria-disabled="true"]),
+    .components-menu-item__button.components-icon-button:hover:not(:disabled):not([aria-disabled="true"]) {
+        background-color: darken(@boxbackgroundcolor, 10%);
+        border: @boxborder;
+        box-shadow: @boxboxshadow;
+        color: @boxcolor;
+        text-transform: @buttontexttransform;
+    }
+}

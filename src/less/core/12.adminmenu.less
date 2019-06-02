@@ -1,0 +1,181 @@
+/*! 12.adminmenu */
+
+// globals
+
+#adminmenuback,
+#adminmenuwrap,
+ul#adminmenu {
+    background: @sidebarbackgroundcolor;
+    border-right: none;
+    width: @sidebarwidth;
+}
+
+// wrap
+
+#adminmenuwrap * {
+    transition-delay: 0;
+    transition-duration: 0;
+    transition-property: none;
+    transition-timing-function: 0;
+}
+
+// admin menu
+
+ul#adminmenu {
+    margin: 0 0 @adminbarheight;
+
+    &:before {
+        color: @iconbase;
+        content: "\f120";
+        display: block;
+        font-family: dashicons;
+        font-size: 80px;
+        height: 80px;
+        line-height: 1;
+        margin: 0 0 @adminbarheight;
+        text-align: center;
+        width: 100%;
+        -webkit-transition: all .1s linear;
+        transition: all .1s linear;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    div.wp-menu-image {
+        float: @iconposition;
+
+        &:before {
+            color: @iconbase;
+        }
+    }
+
+    li {
+        &:after {
+            display: none;
+        }
+
+        a {
+            color: @sidebarcolor;
+            //padding: 5px 2px !important;
+
+            &:after {
+                display: none;
+            }
+
+            &.menu-top {
+                padding: 5px 15px;
+                text-transform: @sidebartexttransform;
+            }
+
+            div.wp-menu-image:before {
+                color: @iconbase;
+            }
+
+            div.wp-menu-name {
+                color: @sidebarcolor;
+            }
+
+            &:focus, &:hover {
+                color: @sidebarhovercolor;
+
+                div.wp-menu-name {
+                    color: @sidebarhovercolor;
+                }
+            }
+        }
+
+        // currently selected menu item
+
+        &.current,
+        &.wp-has-current-submenu {
+            a {
+                div.wp-menu-name {
+                    color: @sidebarcolor;
+                    font-weight: 700;
+                }
+
+                &.wp-has-current-submenu {
+                    div.wp-menu-image:before {
+                        color: @iconfocus;
+                    }
+                }
+            }
+        }
+
+        // different states
+
+        &.menu-top:hover,
+        &.opensub > a.menu-top,
+        > a.menu-top:focus,
+        &:hover a,
+        &:focus a {
+            background: @sidebarhoverbackgroundcolor;
+            color: @sidebarhovercolor;
+        }
+
+        &.opensub,
+        &:hover,
+        a:focus {
+            div.wp-menu-image:before {
+                color: @iconfocus;
+            }
+        }
+    }
+
+    li.wp-has-current-submenu a.wp-has-current-submenu,
+    li.current a.menu-top,
+    .wp-menu-arrow,
+    .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+    .wp-menu-arrow div {
+        background: @sidebarhoverbackgroundcolor;
+        color: @sidebarhovercolor;
+
+        div.wp-menu-image:before {
+            color: @iconfocus;
+        }
+    }
+}
+
+// folded admin menu
+
+.folded ul#adminmenu {
+    &:before {
+        display: none;
+    }
+
+    a.menu-top {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.wp-menu-image:before {
+        padding: 3px 0 0;
+    }
+
+    li.wp-has-current-submenu,
+    li.current.menu-top {
+        background: @sidebarhoverbackgroundcolor;
+        color: @sidebarhovercolor;
+
+        div.wp-menu-image:before {
+            color: @iconfocus;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    body.auto-fold ul#adminmenu {
+        &:before {
+            display: none;
+        }
+
+        a.menu-top {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        div.wp-menu-image:before {
+            padding: 3px 0 0;
+        }
+    }
+}

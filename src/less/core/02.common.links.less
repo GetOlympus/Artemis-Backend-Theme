@@ -1,0 +1,38 @@
+/*! 02.global.links */
+
+.wp-core-ui .button-link,
+.components-button.is-link,
+a {
+    background-color: transparent;
+    border: none;
+    color: @linkcolor;
+    text-decoration: @linktextdecoration;
+
+    -webkit-transition: @linktransition;
+    -moz-transition: @linktransition;
+    transition: @linktransition;
+
+    &:focus, &:hover {
+        background-color: transparent;
+        border: none;
+        color: @linkhovercolor;
+        outline: none;
+        text-decoration: @linkhovertextdecoration;
+    }
+}
+
+.filter-links li > a {
+    border: 1px solid @whitecolor;
+    border-width: 4px 0;
+
+    &.current {
+        border-width: 4px 0;
+    }
+}
+
+.wp-core-ui .button-link.button-link-delete,
+.wp-core-ui .media-modal .delete-attachment,
+.wp-core-ui .media-modal .trash-attachment,
+.wp-core-ui .media-modal .untrash-attachment {
+    color: @errorcolor;
+}
