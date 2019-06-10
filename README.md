@@ -4,7 +4,6 @@ _**Olympus Artemis** is a backend theme WordPress plugin used to make admin pane
 Build with ♥ for **WordPress developers**._  
 [![Build Status](https://img.shields.io/travis/GetOlympus/Artemis-Backend-Theme/master.svg?style=flat-square)](https://travis-ci.org/GetOlympus/Artemis-Backend-Theme) ~
 [![Packagist version](https://img.shields.io/packagist/v/getolympus/olympus-artemis-backend-theme.svg?style=flat-square)](https://packagist.org/packages/getolympus/olympus-artemis-backend-theme) ~
-[![PHP version](https://img.shields.io/travis/php-v/GetOlympus/Artemis-Backend-Theme.svg?style=flat-square)](https://packagist.org/packages/getolympus/olympus-artemis-backend-theme) ~
 [![Olympus bundle](https://img.shields.io/badge/olympus-bundle-brightgreen.svg?style=flat-square)](https://github.com/GetOlympus)  
 
 ---
@@ -39,7 +38,7 @@ _The download link will be available soon._
 + http://github.com/crewstyle
 
 Please, read [LICENSE](https://github.com/GetOlympus/Artemis-Backend-Theme/blob/master/LICENSE "LICENSE") for more details.  
-[![MIT](https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat-square)](http://opensource.org/licenses/MIT "MIT")  
+[![MIT](https://img.shields.io/github/license/GetOlympus/Artemis-Backend-Theme.svg?style=flat-square)](http://opensource.org/licenses/MIT "MIT")  
 
 ---
 
