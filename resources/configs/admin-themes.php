@@ -12,7 +12,8 @@
 /**
  * Reccursive function to get real color
  */
-function getRealColor($value, $contents) {
+function getRealColor($value, $contents)
+{
     return "@" === substr($value, 0, 1) ? getRealColor($contents[substr($value, 1)], $contents) : $value;
 }
 
