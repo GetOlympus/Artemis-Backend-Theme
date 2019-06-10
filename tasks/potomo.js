@@ -1,6 +1,6 @@
 /*!
  * @package olympus-artemis-backend-theme
- * @subpackage cssmin.js
+ * @subpackage po2mo.js
  * @author Achraf Chouk <achrafchouk@gmail.com>
  * @since 0.0.1
  */
@@ -9,13 +9,16 @@
 
 module.exports = function (grunt, configs) {
   return {
-    src: {
+    app: {
+      options: {
+        poDel: true
+      },
       files: [{
+        cwd: configs.paths.i18n,
+        dest: configs.paths.i18n,
         expand: true,
-        cwd: configs.paths.src + '/css',
-        src: ['*.css'],
-        dest: configs.paths.tar + '/' + configs.paths.assets + '/css',
-        ext: '.min.css'
+        ext: '.mo',
+        src: '*.po'
       }]
     }
   }

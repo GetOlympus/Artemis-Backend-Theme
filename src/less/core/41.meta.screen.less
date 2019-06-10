@@ -3,34 +3,65 @@
 // container
 
 #screen-meta {
-    background-color: @boxbackgroundcolor;
-    border: @boxborder;
-    border-top: none;
+    background-color: @sidebarbackgroundcolor;
     box-shadow: @boxboxshadow;
+}
+
+#screen-options-wrap {
+    color: @sidebarcolor;
 }
 
 // screen meta links
 
 #screen-meta-links .show-settings {
-    background-color: @boxbackgroundcolor;
-    border: @boxborder;
+    background-color: @adminbarbackgroundcolor;
     border-radius: 0 0 @buttonborderradius @buttonborderradius;
+    border-top: 0;
     box-shadow: @boxboxshadow;
-    color: @boxcolor;
+    color: @adminbarcolor;
+    height: 27px;
     text-transform: none;
 }
 
 // content
 
 #contextual-help-back {
-    background: fade(@infocolor, 10%);
+    background: @sidebarhoverbackgroundcolor;
+    left: @dropdownwidth;
+    right: @dropdownwidth;
 }
 
-.contextual-help-tabs .active {
-    background: fade(@infocolor, 10%);
-    border-left-color: @infocolor;
+.contextual-help-sidebar {
+    color: @sidebarcolor;
+    width: @dropdownwidth;
 
     a {
-        color: @infocolor;
+        color: @iconfocus;
     }
+}
+
+.contextual-help-tabs {
+    width: @dropdownwidth;
+
+    li {
+        a {
+            border: 1px solid transparent;
+            border-left: none;
+            border-right: none;
+            color: @sidebarcolor;
+        }
+
+        &.active {
+            background: @sidebarhoverbackgroundcolor;
+            border-left-color: @iconfocus;
+
+            a {
+                color: @iconfocus;
+            }
+        }
+    }
+}
+
+.contextual-help-tabs-wrap {
+    color: @sidebarcolor;
 }

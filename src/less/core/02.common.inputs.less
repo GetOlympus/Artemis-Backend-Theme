@@ -1,4 +1,4 @@
-/*! 02.global.inputs */
+/*! 02.common.inputs */
 
 // globals
 
@@ -59,6 +59,20 @@
         }
     }
 
+    input[type="search"].wp-filter-search,
+    select#typeselector {
+        font-size: 13px;
+        height: 32px;
+        padding: 3px 5px;
+        vertical-align: top;
+
+        &:focus {
+            font-size: 13px;
+            height: 32px;
+            padding: 3px 5px;
+        }
+    }
+
     input[type="checkbox"],
     input[type="radio"] {
         background-color: @inputbackgroundcolor;
@@ -74,6 +88,7 @@
         min-width: 16px;
         outline: 0;
         padding: 0 !important;
+        position: relative;
         text-align: center;
         vertical-align: middle;
         width: 16px;
@@ -115,14 +130,25 @@
         color: @inputcolor;
     }
 
+    input[type="checkbox"]:checked:before,
+    input[type="radio"]:checked:before {
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        -moz-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+    }
+
     input[type="checkbox"]:checked:before {
         color: @inputcolor;
-        margin: -4px 0 0 -5px;
+        width: 21px;
     }
 
     input[type="radio"]:checked:before {
         background-color: @inputcolor;
-        margin: 3px 4px 4px 3px;
     }
 
     input[type="reset"] {
@@ -166,7 +192,7 @@
         &:focus {
             background-color: transparent;
             border: none;
-            box-shadow:;
+            box-shadow: none;
         }
     }
 }

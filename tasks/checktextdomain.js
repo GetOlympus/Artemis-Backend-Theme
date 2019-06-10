@@ -1,6 +1,6 @@
 /*!
  * @package olympus-artemis-backend-theme
- * @subpackage cssmin.js
+ * @subpackage checktextdomain.js
  * @author Achraf Chouk <achrafchouk@gmail.com>
  * @since 0.0.1
  */
@@ -9,14 +9,15 @@
 
 module.exports = function (grunt, configs) {
   return {
-    src: {
+    app: {
+      options: {
+        keywords: configs.keywords,
+        text_domain: configs.textdomain
+      },
       files: [{
         expand: true,
-        cwd: configs.paths.src + '/css',
-        src: ['*.css'],
-        dest: configs.paths.tar + '/' + configs.paths.assets + '/css',
-        ext: '.min.css'
-      }]
+        src: configs.phpfiles
+      }],
     }
   }
 };

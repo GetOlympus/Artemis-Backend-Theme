@@ -17,11 +17,12 @@ $path = basename($path);
 $home = defined('OL_BLOG_HOME') ? OL_BLOG_HOME : get_option('home');
 
 // Check vars: access urls
-$access_url = get_option('ol_artemis_access_url', '');
-$access_url = (empty($access_url) ? 'wp-login' : $access_url).'.php';
+//$access_url = get_option('ol_artemis_access_url', '');
+//$access_url = (empty($access_url) ? 'wp-login' : $access_url).'.php';
 
 // Check vars: login error
 $login_error = get_option('ol_artemis_login_error_message', 1);
+$login_error = $login_error ? __('access.error.message', 'olympus-artemis') : '';
 
 // Check vars: login header
 $login_header_title = get_option('ol_artemis_login_header_title', '');
@@ -33,15 +34,16 @@ $login_header = [
 
 // Check vars: login shake
 $login_shake = get_option('ol_artemis_login_shake', 1);
+$login_shake = (bool) $login_shake;
 
 // Check vars: login style
-$login_style_check = get_option('ol_artemis_login_style', 1);
-$login_style = !$login_style_check ? [] : [
-    'styles'        => [
-        'artemis',
-        $path.S.'resources'.S.'assets'.S.'css'.S.'artemis.min.css',
+$login_theme = get_option('ol_artemis_login_theme', 'default');
+$login_style = 'default' === $login_theme ? [] : [
+    'styles'        => [[
+        $login_theme,
+        WP_PLUGIN_URL.S.$path.S.'resources'.S.'assets'.S.'css'.S.$login_theme.'-login.min.css',
         []
-    ]
+    ]]
 ];
 
 return [
@@ -53,7 +55,7 @@ return [
     /**
      * Hiding wp-login.php in the login and registration URLs
      */
-    'access-url'    => $access_url,
+    //'access-url'    => $access_url,
 
     /**
      * Redisign wp-login.php page with custom error message.

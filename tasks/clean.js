@@ -7,17 +7,25 @@
 
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function (grunt, configs) {
   return {
     app: [
-      'resources/assets/css/*',
-      'resources/assets/fonts/*',
-      'resources/assets/img/*',
-      'resources/assets/js/*'
+      configs.paths.tar + '/' + configs.paths.assets + '/css/*',
+      configs.paths.tar + '/' + configs.paths.assets + '/fonts/*',
+      configs.paths.tar + '/' + configs.paths.assets + '/img/*',
+      configs.paths.tar + '/' + configs.paths.assets + '/js/*'
+    ],
+
+    mo: [
+      configs.paths.i18n + '/*.mo'
+    ],
+
+    pot: [
+      configs.paths.src + '/' + configs.paths.i18n + '/*.pot'
     ],
 
     src: [
-      'src/css'
+      configs.paths.src + '/css'
     ]
   }
 };

@@ -1,5 +1,5 @@
 /*!
- * Core component
+ * Login component
  *
  * Copyright 2016 Achraf Chouk
  * Achraf Chouk (https://github.com/crewstyle)
@@ -8,8 +8,8 @@
 /*! 01.common */
 
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 *, :after, :before {
@@ -19,11 +19,16 @@
 }
 
 html {
+    background-color: @loginbackgroundcolor;
+    background-image: @loginbackgroundimage;
+    background-position: 50% 0;
+    background-size: @loginbackgroundsize;
     font-family: sans-serif;
     font-size: 62.5%;
     line-height: 1.65;
-    -ms-text-size-adjust: 100%;
+
     -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 html, body {
@@ -31,17 +36,10 @@ html, body {
     max-width: initial;
 }
 
-html,
-#wp-content-editor-tools {
-    background-color: @bodybackgroundcolor;
-}
-
 body {
-    background: @bodybackgroundcolor;
-}
-
-.spinner {
-    margin-top: 11px;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
 }
 
 h1, h2, h3 {
@@ -67,12 +65,4 @@ hr {
 ul, ol, dl{
     margin-left: 0;
     margin-bottom: 0;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    margin: 0;
-
-    -webkit-appearance: none;
-    appearance: none;
 }

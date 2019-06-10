@@ -7,6 +7,10 @@
     border-color: @infocolor;
     border-radius: @defaultborderradius;
     color: @infocolor;
+
+    &.notice-alt {
+        background-color: fade(@infocolor, 7.5%);
+    }
 }
 
 // success
@@ -17,6 +21,10 @@
     border-color: @successcolor;
     border-radius: @defaultborderradius;
     color: @successcolor;
+
+    &.notice-alt {
+        background-color: fade(@successcolor, 7.5%);
+    }
 }
 
 .components-notice.is-success {
@@ -30,6 +38,10 @@
     border-color: @warningcolor;
     border-radius: @defaultborderradius;
     color: @warningcolor;
+
+    &.notice-alt {
+        background-color: fade(@warningcolor, 7.5%);
+    }
 }
 
 // error
@@ -39,4 +51,8 @@
     border-color: @errorcolor;
     border-radius: @defaultborderradius;
     color: @errorcolor;
+
+    &.notice-alt {
+        background-color: fade(@errorcolor, 7.5%);
+    }
 }

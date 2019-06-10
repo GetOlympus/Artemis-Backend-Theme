@@ -7,7 +7,7 @@
 
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function (grunt, configs) {
   return {
     app: {
       options: {
@@ -15,9 +15,9 @@ module.exports = function (grunt) {
       },
       files: [{
         expand: true,
-        cwd: 'resources/assets/img/',
+        cwd: configs.paths.tar + '/' + configs.paths.assets + '/img/',
         src: ['**/*.{png,gif,jpg,jpeg}'],
-        dest: 'resources/assets/img/'
+        dest: configs.paths.tar + '/' + configs.paths.assets + '/img/'
       }]
     }
   }

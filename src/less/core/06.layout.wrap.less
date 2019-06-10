@@ -3,16 +3,24 @@
 .wrap {
     margin-left: @bodypadding;
 
+    h1 {
+        padding: 20px 0;
+    }
+
     .add-new-h2,
     .add-new-h2:active,
     .page-title-action,
     .page-title-action:active {
-        background: fade(@primarycolor, 5%);
-        border: none;
-        border-radius: @defaultborderradius;
-        color: @primarycolor;
+        background-color: @buttonbackgroundcolor;
+        background-image: @buttonbackgroundimage;
+        border: @buttonborder;
+        border-radius: @buttonborderradius;
+        box-shadow: @buttonboxshadow;
+        color: @buttoncolor;
         font-weight: 200;
         padding: 6px 14px;
+        text-shadow: @buttontextshadow;
+        text-transform: @buttontexttransform;
         vertical-align: middle;
 
         -webkit-transition: @defaulttransition;
@@ -20,8 +28,14 @@
         transition: @defaulttransition;
 
         &:focus, &.focus, &:hover, &.hover {
-            background: fade(@primarycolor, 30%);
-            color: @primarycolor;
+            background-color: @buttonhoverbackgroundcolor;
+            background-image: @buttonhoverbackgroundimage;
+            border: @buttonhoverborder;
+            border-radius: @buttonhoverborderradius;
+            box-shadow: @buttonhoverboxshadow;
+            color: @buttonhovercolor;
+            text-shadow: @buttonhovertextshadow;
+            text-transform: @buttonhovertexttransform;
         }
     }
 }

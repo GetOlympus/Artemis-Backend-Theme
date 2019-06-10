@@ -72,7 +72,7 @@
   "sidebarhoverbackgroundcolor": "@thirdcolor",
   "sidebarhovercolor": "@primarycolor",
   "sidebarfontsize": "13px",
-  "sidebarmargin": "0 0 32px",
+  "sidebarmargin": "0 0 @adminbarheight",
   "sidebarpadding": "0",
   "sidebartexttransform": "none",
   "sidebarwidth": "@defaultsidebarwidth",
@@ -97,7 +97,7 @@
   "boxcontainerpadding": "0",
 
   "boxheadercolor": "@blackcolor",
-  "boxheaderfontsize": "1rem",
+  "boxheaderfontsize": "1.4rem",
   "boxheaderfontweight": "400",
   "boxheaderletterspacing": ".02em",
   "boxheaderlineheight": "24px",
@@ -210,12 +210,30 @@
 
 
 
-  "loginbackgroundcolor": "transparent",
-  "loginbackgroundimage": "url(../img/artemis-login.jpg)",
-  "logincolor": "@blackcolor",
-  "loginfontsize": "13px",
-  "loginmargin": "30px auto 0",
-  "loginpadding": "2% 0",
+  "tableoddbackgroundcolor": "@boxcontainerbackgroundcolor",
+  "tablecolor": "@blackcolor",
+  "tabletitlecolor": "@linkcolor",
+
+
+
+  "loginbackgroundcolor": "#fbfbfc",
+  "loginbackgroundimage": "none",
+  "loginbackgroundsize": "auto",
+  "logincolor": "@boxcontainercolor",
+  "loginfontsize": "@boxfontsize",
+  "loginlineheight": "15px",
+
+  "logincontainerbackgroundcolor": "@boxcontainerbackgroundcolor",
+  "logincontainerborder": "@boxcontainerborder",
+  "logincontainerborderradius": "@boxcontainerborderradius",
+  "logincontainerboxshadow": "@boxcontainerboxshadow",
+  "logincontainermargin": "30px auto",
+  "logincontainerpadding": "@boxpadding",
+  "logincontainerwidth": "400px",
+
+  "logintitlecolor": "@boxcontainercolor",
+  "logintitledisplay": "block",
+  "logintitlemargin": "0 0 20px",
 
 
 

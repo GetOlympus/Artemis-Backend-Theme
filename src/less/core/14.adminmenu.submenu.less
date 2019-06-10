@@ -11,6 +11,10 @@ ul#adminmenu li.wp-has-current-submenu ul.wp-submenu {
     background: @sidebarbackgroundcolor;
 }
 
+ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:focus + ul.wp-submenu {
+    background: @sidebarhoverbackgroundcolor;
+}
+
 // admin menu submenu
 
 ul#adminmenu li {
@@ -37,7 +41,6 @@ ul#adminmenu li {
             a {
                 background: transparent;
                 color: @dropdowncolor;
-                //padding: 6px 12px;
 
                 &.current, &:focus, &:hover {
                     color: @dropdownhovercolor;

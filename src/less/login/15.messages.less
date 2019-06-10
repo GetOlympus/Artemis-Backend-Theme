@@ -1,0 +1,32 @@
+/*! 15.messages */
+
+body.login div#login {
+    .message {
+        background: @sidebarbackgroundcolor;
+        border: none;
+        color: @sidebarcolor;
+        margin: 0 0 15px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #login_error {
+        background-color: fade(@errorcolor, 7.5%);
+        border-color: @errorcolor;
+        border-radius: @defaultborderradius;
+        color: @errorcolor;
+        margin: 0 0 15px;
+        padding: 10px;
+        width: 100%;
+
+        a {
+            color: @errorcolor;
+        }
+    }
+
+    #reg_passmail {
+        color: @logincolor;
+        font-style: italic;
+        margin: 30px 0 -20px;
+    }
+}

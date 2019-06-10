@@ -72,7 +72,7 @@
   "sidebarhoverbackgroundcolor": "@adminbarhoverbackgroundcolor",
   "sidebarhovercolor": "@adminbarhovercolor",
   "sidebarfontsize": "@adminbarfontsize",
-  "sidebarmargin": "0 0 32px",
+  "sidebarmargin": "0 0 @adminbarheight",
   "sidebarpadding": "0",
   "sidebartexttransform": "uppercase",
   "sidebarwidth": "@defaultsidebarwidth",
@@ -82,7 +82,7 @@
   "dropdowncolor": "@adminbarcolor",
   "dropdownhoverbackgroundcolor": "@adminbarhoverbackgroundcolor",
   "dropdownhovercolor": "@adminbarhovercolor",
-  "dropdownfontsize": "@adminbarheight",
+  "dropdownfontsize": "@adminbarfontsize",
   "dropdownmargin": "0",
   "dropdownpadding": "8px 0",
   "dropdownwidth": "220px",
@@ -210,12 +210,30 @@
 
 
 
-  "loginbackgroundcolor": "transparent",
-  "loginbackgroundimage": "url(../img/tamed-login.jpg)",
-  "logincolor": "#121116",
-  "loginfontsize": "13px",
-  "loginmargin": "30px auto 0",
-  "loginpadding": "2% 0",
+  "tableoddbackgroundcolor": "@boxcontainerbackgroundcolor",
+  "tablecolor": "@blackcolor",
+  "tabletitlecolor": "@linkcolor",
+
+
+
+  "loginbackgroundcolor": "@bodybackgroundcolor",
+  "loginbackgroundimage": "url(../img/wprocket-login.svg), linear-gradient(to bottom, #0e1b23, #0e1b23 300px, #f6f6f6 300px)",
+  "loginbackgroundsize": "auto",
+  "logincolor": "#0e1b23",
+  "loginfontsize": "1.9rem",
+  "loginlineheight": "1.5em",
+
+  "logincontainerbackgroundcolor": "@whitecolor",
+  "logincontainerborder": "1px solid #e5e5e5",
+  "logincontainerborderradius": "0",
+  "logincontainerboxshadow": "none",
+  "logincontainermargin": "30px auto",
+  "logincontainerpadding": "30px 42px",
+  "logincontainerwidth": "500px",
+
+  "logintitlecolor": "#0e1b23",
+  "logintitledisplay": "block",
+  "logintitlemargin": "0 0 30px",
 
 
 

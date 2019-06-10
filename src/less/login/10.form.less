@@ -1,0 +1,185 @@
+/*! 10.form */
+
+body.login div#login form {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    max-width: 100%;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+
+    label {
+        color: @logincolor;
+        display: block;
+        font-size: 0;
+        margin: 0 0 15px;
+        padding: 0;
+        position: relative;
+
+        br {
+            display: none;
+            height: 0;
+            width: 0;
+        }
+
+        &[for="user_login"],
+        &[for="user_pass"],
+        &[for="user_email"] {
+            &:before {
+                color: extract(@inputborder, 3);
+                font-family: dashicons;
+                font-size: @loginfontsize;
+                left: 10px;
+                position: absolute;
+                top: 50%;
+
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+
+        &[for="user_login"]:before {
+            content: "\f110";
+        }
+        &[for="user_pass"]:before {
+            content: "\f530";
+        }
+        &[for="user_email"]:before {
+            content: "\f465";
+        }
+
+        &[for="rememberme"] {
+            font-size: 13px;
+        }
+    }
+
+    .input,
+    input[type="password"],
+    input[type="email"],
+    input[type="text"] {
+        background-color: @inputbackgroundcolor;
+        border: @inputborder;
+        border-radius: @inputborderradius;
+        box-shadow: @inputboxshadow;
+        color: @inputcolor;
+        font-size: @loginfontsize;
+        margin: 0;
+        outline: none;
+        padding: @inputpadding;
+        padding-left: 34px;
+        vertical-align: middle;
+
+        -webkit-transition: @inputtransition;
+        -moz-transition: @inputtransition;
+        transition: @inputtransition;
+
+        &:focus {
+            background-color: @inputfocusbackgroundcolor;
+            border: @inputfocusborder;
+            border-radius: @inputfocusborderradius;
+            box-shadow: @inputfocusboxshadow;
+            color: @inputfocuscolor;
+            font-size: @loginfontsize;
+            outline: none;
+            padding: @inputfocuspadding;
+            padding-left: 34px;
+        }
+    }
+
+    input[type="checkbox"] {
+        background-color: @inputbackgroundcolor;
+        border: @inputborder;
+        box-shadow: @inputboxshadow;
+        color: @inputcolor;
+        clear: none;
+        cursor: pointer;
+        display: inline-block;
+        height: 16px;
+        line-height: 0;
+        margin: -4px 4px 0 0;
+        min-width: 16px;
+        outline: 0;
+        padding: 0 !important;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        width: 16px;
+
+        -webkit-appearance: none;
+
+        -webkit-transition: @inputtransition;
+        -moz-transition: @inputtransition;
+        transition: @inputtransition;
+
+        &:checked {
+            background-color: @inputbackgroundcolor !important;
+            border: @inputborder !important;
+            color: @inputcolor !important;
+
+            &:before {
+                color: @inputcolor;
+                left: 50%;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                width: 21px;
+
+                -webkit-transform: translateY(-50%) translateX(-50%);
+                -moz-transform: translateY(-50%) translateX(-50%);
+                transform: translateY(-50%) translateX(-50%);
+            }
+        }
+    }
+
+    p.forgetmenot {
+        float: none;
+    }
+
+    p.submit {
+        margin: 0;
+        padding: 0;
+
+        input#wp-submit {
+            background-color: @buttonprimarybackgroundcolor;
+            background-image: @buttonprimarybackgroundimage;
+            border: @buttonprimaryborder;
+            border-radius: @buttonprimaryborderradius;
+            box-shadow: @buttonheroboxshadow;
+            color: @buttonprimarycolor;
+            float: none;
+            font-size: @buttonherofontsize;
+            height: auto;
+            line-height: 1;
+            padding: @buttonheropadding;
+            text-shadow: @buttonprimarytextshadow;
+            text-transform: @buttonprimarytexttransform;
+            vertical-align: middle;
+            white-space: normal;
+            width: 100%;
+
+            -webkit-transition: @buttonprimarytransition;
+            -moz-transition: @buttonprimarytransition;
+            transition: @buttonprimarytransition;
+
+            &:focus, &:hover {
+                box-shadow: @buttonherohoverboxshadow;
+                font-size: @buttonherohoverfontsize;
+                padding: @buttonherohoverpadding;
+            }
+        }
+    }
+
+    input[type="text"]:-webkit-autofill {
+        box-shadow: @inputfocusboxshadow;
+        -webkit-text-fill-color: @inputfocuscolor !important;
+    }
+
+    input[type="password"]:-webkit-autofill {
+        box-shadow: @inputfocusboxshadow;
+        -webkit-text-fill-color: @inputfocuscolor !important;
+    }
+}

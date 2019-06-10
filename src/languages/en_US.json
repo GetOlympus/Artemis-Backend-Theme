@@ -1,0 +1,37 @@
+{
+    "access.error.message": "Something went wrong with your login or password.",
+
+    "admin.artemis.title": "Artemis",
+    "admin.artemis.name": "Artemis Options",
+    "admin.artemis.welcome": "Welcome",
+    "admin.artemis.login": "Login page",
+
+    "admin.default.no": "No",
+    "admin.default.yes": "Yes",
+    "admin.default.wordpress": "WordPress",
+
+    "admin.login.theme.title": "Choose the theme you want to use",
+    "admin.login.theme.description": "If you want to see them in action, please go to <a href=\"%s\" target=\"_blank\">your profile</a> page and customize your current admin theme.",
+    "admin.login.url.title": "Custom login page URL",
+    "admin.login.url.description": "Define a custom login page URL instead of the very known <code>wp-login</code> slug.",
+    "admin.login.error.title": "Use Artemis custom error message to increase your security?",
+    "admin.login.error.description": "Whatever the error, the message \"%s\" will be displayed.",
+    "admin.login.headertitle.title": "Header title",
+    "admin.login.headertitle.description": "Define a custom title for your login page.",
+    "admin.login.headerurl.title": "Use your own Website URL on the logo?",
+    "admin.login.shake.title": "Keep the shake login animation on error?",
+
+    "welcome.title": "This is where it all begins",
+    "welcome.intro": "Thanks so much for joining us and using our excellent <b>Artemis Backend Theme</b> plugin.<br/>You are on your way to customize and enhance your WordPress admin panel experience!",
+    "welcome.howto.title": "How-to",
+    "welcome.howto.content.first": "The Artemis Backend Theme plugin is built with %d admin themes described below.<br/>You can define yours in <a href=\"%s\">your profile page</a>.",
+    "welcome.howto.content.second": "You can customize as well your website Login page by choosing the admin login theme you want.",
+    "welcome.adminthemes.title": "Admin themes",
+    "welcome.packages.title": "Recommended Olympus packages",
+    "welcome.packages.olympus.title": "Olympus framework",
+    "welcome.packages.olympus.description": "The Olympus framework, your simple, easy to use and powerfull framework to deploy and work with WordPress.",
+    "welcome.packages.zeus.title": "Olympus Zeus",
+    "welcome.packages.zeus.description": "The Olympus Zeus framework core system used to make all your WordPress plugins and themes developments easier and efficient.",
+    "welcome.outro.author": "<b>Author:</b> <a href=\"%s\" target=\"_blank\">Achraf Chouk</a> - <b>Copyright:</b> <a href=\"%s\" target=\"_blank\">MIT Licence</a>",
+    "welcome.outro.source": "<a href=\"%s\" target=\"_blank\">%s</a>"
+}

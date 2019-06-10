@@ -58,12 +58,6 @@ defined('OL_ISADMIN')           or define('OL_ISADMIN', is_admin());
 // Vendor package, constant defined in main Olympus framework
 defined('VENDORPATH')           or define('VENDORPATH', realpath(dirname(__DIR__)).S.'vendor'.S);
 
-/**
- * Define constants
- */
-
-// Dictionary key
-define('OL_ARTEMIS_DICTIONARY', 'olympus-artemis');
 // Resources path.
 define('OL_ARTEMIS_RESOURCESPATH', realpath(dirname(__FILE__)).S.'resources'.S);
 
@@ -75,7 +69,7 @@ if (!class_exists('ArtemisBackendTheme')) {
     class ArtemisBackendTheme extends \GetOlympus\Zeus\Zeus
     {
         /**
-         * Constructor.
+         * Define vars
          */
         protected function setVars()
         {
@@ -86,7 +80,26 @@ if (!class_exists('ArtemisBackendTheme')) {
 
             // Initialize configurations
             $this->configurations = [
-                'AdminThemesConfiguration' => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'admin-themes.php',
+                // Alias to load                => File path to associate
+                'AccessManagementConfiguration' => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'access-management.php',
+                'AdminThemesConfiguration'      => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'admin-themes.php',
+            ];
+
+            // Initialize custom components.
+            $this->paths = [
+                // Action to make   => Array of File paths to associate
+                'admin_menu'        => [
+                    OL_ARTEMIS_RESOURCESPATH.'controllers'.S.'adminpages',
+                ],
+            ];
+
+            // Set package type to load properly texts
+            $this->packagetype = 'plugin';
+
+            // Initialize custom translations.
+            $this->translations = [
+                // Text domain to integrate => Languages folder to check
+                'olympus-artemis'           => dirname(plugin_basename(__FILE__)).S.'languages',
             ];
         }
     }

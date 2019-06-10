@@ -1,0 +1,37 @@
+{
+    "access.error.message": "Le nom d'utilisateur ou le mot de passe est erroné.",
+
+    "admin.artemis.title": "Artemis",
+    "admin.artemis.name": "Artemis Options",
+    "admin.artemis.welcome": "Bienvenue",
+    "admin.artemis.login": "Page de connexion",
+
+    "admin.default.no": "Non",
+    "admin.default.yes": "Oui",
+    "admin.default.wordpress": "WordPress",
+
+    "admin.login.theme.title": "Définissez le thème à utiliser",
+    "admin.login.theme.description": "Si vous souhaitez le voir en action, merci de vous rendre dans <a href=\"%s\" target=\"_blank\">votre page de profil</a> afin de personnaliser votre thème d'adminisitration actuel.",
+    "admin.login.url.title": "URL de page de connexion personnalisée",
+    "admin.login.url.description": "Définissez une URL de page de connexion à la place du fameux slug <code>wp-login</code>.",
+    "admin.login.error.title": "Utilisez le message d'erreur personnalisé ?",
+    "admin.login.error.description": "Quelque soit l'erreur, le message suivant \"%s\" sera affiché. Celui-ci permet d'améliorer la sécurité de votre site WordPress.",
+    "admin.login.headertitle.title": "Title de page",
+    "admin.login.headertitle.description": "Définissez un title personnalisé pour votre page de connexion.",
+    "admin.login.headerurl.title": "Utilisez l'URL de votre site public au clic sur le logo ?",
+    "admin.login.shake.title": "Conserver l'animation de secousse lors d'une erreur ?",
+
+    "welcome.title": "C'est ici que tout démarre",
+    "welcome.intro": "Merci pour avoir choisi d'utiliser notre excellente extension <b>Artemis Backend Theme</b>.<br/>Vous êtes sur la bonne voie pour personnaliser et améliorer votre expérience d'administration WordPress !",
+    "welcome.howto.title": "Comment faire",
+    "welcome.howto.content.first": "L'extension Artemis Backend Theme a été installée et se compose de %d thèmes d'administration décrits ci-dessous.<br/>Vous pouvez choisir le vôtre depuis <a href=\"%s\">votre page de profil</a>.",
+    "welcome.howto.content.second": "Vous pouvez personnaliser également votre page de connexion en choisissant, par exemple, le thème à afficher.",
+    "welcome.adminthemes.title": "Thèmes d'administration",
+    "welcome.packages.title": "Paquets Olympus recommandés",
+    "welcome.packages.olympus.title": "Framework Olympus",
+    "welcome.packages.olympus.description": "Le Framework Olympus, votre outil de déploiement et de travail aussi simple, facile à utiliser que puissant pour vos sites WordPress.",
+    "welcome.packages.zeus.title": "Olympus Zeus",
+    "welcome.packages.zeus.description": "Le framework Olympus Zeus core system à utiliser pour rendre le développement de vos extensions et thèmes WordPress encore plus facile et plus efficace.",
+    "welcome.outro.author": "<b>Auteur:</b> <a href=\"%s\" target=\"_blank\">Achraf Chouk</a> - <b>Copyright:</b> <a href=\"%s\" target=\"_blank\">Licence MIT</a>",
+    "welcome.outro.source": "<a href=\"%s\" target=\"_blank\">%s</a>"
+}

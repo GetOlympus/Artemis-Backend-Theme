@@ -1,1 +1,33 @@
 /*! 30.tables */
+
+// globals
+
+.widefat thead td.check-column,
+.widefat tbody th.check-column,
+.updates-table tbody td.check-column,
+.widefat tfoot td.check-column {
+    padding-left: 12px;
+}
+
+// colors
+
+.widefat th, .widefat td {
+    color: @tablecolor;
+}
+
+.widefat thead tr th,
+.widefat thead tr td,
+.widefat tfoot tr th,
+.widefat tfoot tr td {
+    color: @tabletitlecolor;
+}
+
+.striped > tbody > :nth-child(odd),
+ul.striped > :nth-child(odd),
+.alternate {
+    background-color: @tableoddbackgroundcolor;
+}
+
+.row-title {
+    color: @tabletitlecolor;
+}

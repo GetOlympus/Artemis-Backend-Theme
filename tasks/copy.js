@@ -7,7 +7,7 @@
 
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function (grunt, configs) {
   return {
     app: {
       files: [
@@ -15,8 +15,8 @@ module.exports = function (grunt) {
           expand: true,
           flatten: true,
           filter: 'isFile',
-          src: ['src/img/*'],
-          dest: 'resources/assets/img/'
+          src: [configs.paths.src + '/img/*'],
+          dest: configs.paths.tar + '/' + configs.paths.assets + '/img/'
         }
       ]
     }

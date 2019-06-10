@@ -47,7 +47,7 @@ foreach (new DirectoryIterator($rootpath.S.'src'.S.'configs') as $jsonfile) {
          */
         $filename => [
             // The name of the theme.
-            'name'   => __($contents['name'], OL_ARTEMIS_DICTIONARY),
+            'name'   => $contents['name'],
             // The URL of the CSS file containing the color scheme.
             'url'    => WP_PLUGIN_URL.S.$csspath.$filename.'.min.css',
             // An array of CSS color definition strings which are used to give the user a feel for the theme.

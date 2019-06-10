@@ -1,0 +1,39 @@
+/*! 41.meta.welcome */
+
+@_spacesize: 20;
+
+.welcome-panel {
+    background-color: @boxbackgroundcolor;
+    border: @boxcontainerborder;
+    border-radius: @boxcontainerborderradius;
+    box-shadow: inset 0 0 0 unit(@_spacesize / 2, px) @boxcontainerbackgroundcolor;
+    color: @boxcolor;
+    font-size: @boxfontsize;
+    margin: 0 0 unit(@_spacesize, px);
+    padding: unit(@_spacesize, px) unit(@_spacesize / 4 * 5, px);
+
+    h2.hndle,
+    > h3 {
+        color: @boxheadercolor;
+        font-size: @boxheaderfontsize;
+        font-weight: @boxheaderfontweight;
+        letter-spacing: @boxheaderletterspacing;
+        line-height: @boxheaderlineheight;
+        margin: @boxheadermargin;
+        padding: @boxheaderpadding;
+        text-align: @boxheadertextalign;
+        text-transform: @boxheadertexttransform;
+    }
+
+    .welcome-panel-content {
+        margin-left: 0;
+
+        h3 {
+            margin-top: unit(@_spacesize, px);
+        }
+
+        ul {
+            margin: unit(@_spacesize, px) unit(@_spacesize, px) 0 0;
+        }
+    }
+}

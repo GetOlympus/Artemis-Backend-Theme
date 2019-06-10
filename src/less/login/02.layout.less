@@ -1,0 +1,38 @@
+/*! 02.layout */
+
+body.login {
+    background-color: transparent;
+    height: 100%;
+
+    div#login {
+        background-color: @logincontainerbackgroundcolor;
+        border: @logincontainerborder;
+        border-radius: @logincontainerborderradius;
+        box-shadow: @logincontainerboxshadow;
+        left: 50%;
+        margin: @logincontainermargin;
+        margin-bottom: 0;
+        margin-top: 0;
+        max-width: 100%;
+        padding: @logincontainerpadding;
+        position: absolute;
+        top: 50%;
+        width: @logincontainerwidth;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &.interim-login div#login {
+        position: static;
+
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
+    }
+}

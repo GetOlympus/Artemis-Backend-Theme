@@ -5,15 +5,15 @@
  * @since 0.0.1
  */
 
-module.exports = function (grunt) {
+module.exports = function (grunt, configs) {
   var merge = require('lodash.merge'),
-    files = grunt.file.expand({filter: "isFile"}, "src/configs/*.json"),
+    files = grunt.file.expand({filter: "isFile"}, configs.paths.src + '/configs/*.json'),
     jsonArr = [], jsonObj = {};
 
   // read all files and build array
   files.forEach(function (jsonfile) {
     var name = jsonfile.split('/').pop().split('.')[0],
-      json = grunt.file.readJSON("src/configs/"+name+".json");
+      json = grunt.file.readJSON(configs.paths.src + '/configs/' + name + '.json');
 
     jsonArr.push({[name]: {
       options: {
@@ -21,12 +21,8 @@ module.exports = function (grunt) {
         optimization: 2
       },
       files: {
-        ["src/css/"+name+"-login.css"]: [
-          "src/less/login/*.less"
-        ],
-        ["src/css/"+name+".css"]: [
-          "src/less/core/*.less"
-        ]
+        [configs.paths.src + '/css/' + name + '-login.css']: [configs.paths.src + '/less/login/*.less'],
+        [configs.paths.src + '/css/' + name + '.css']: [configs.paths.src + '/less/core/*.less']
       }
     }});
   });
@@ -36,5 +32,5 @@ module.exports = function (grunt) {
     jsonObj = merge(jsonObj, item);
   });
 
-  return jsonObj;
+  return jsonObj
 };
