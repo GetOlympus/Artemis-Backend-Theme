@@ -20,14 +20,6 @@ $path = basename($path);
 // Generate Home blog
 $home = defined('OL_BLOG_HOME') ? OL_BLOG_HOME : get_option('home');
 
-// Check vars: access urls
-//$access_url = get_option('ol_artemis_login_slug', '');
-//$access_url = empty($access_url) ? 'wp-login.php' : $access_url;
-
-// Check vars: login error
-//$login_error = get_option('ol_artemis_login_error_message', 1);
-//$login_error = $login_error ? __('access.error.message', 'olympus-artemis') : '';
-
 // Check vars: login header
 $login_header_title = get_option('ol_artemis_login_header_title', '');
 $login_header_url = get_option('ol_artemis_login_header_url', 1);
@@ -55,16 +47,6 @@ return [
      * @var     string  $key    The key used to define theme.
      * @param   string  $args   The theme arguments.
      */
-
-    /**
-     * Hiding wp-login.php in the login and registration URLs
-     */
-    //'access-url'    => $access_url,
-
-    /**
-     * Redisign wp-login.php page with custom error message.
-     */
-    //'login-error'   => $login_error,
 
     /**
      * Redisign wp-login.php page with custom header configurations.
