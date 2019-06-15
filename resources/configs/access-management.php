@@ -9,6 +9,10 @@
  * @since    0.0.1
  */
 
+if (!defined('ABSPATH')) {
+    die('You are not authorized to directly access to this page');
+}
+
 // Generate CSS file path
 $path = dirname(dirname(dirname(__FILE__)));
 $path = basename($path);
@@ -17,12 +21,12 @@ $path = basename($path);
 $home = defined('OL_BLOG_HOME') ? OL_BLOG_HOME : get_option('home');
 
 // Check vars: access urls
-//$access_url = get_option('ol_artemis_access_url', '');
-//$access_url = (empty($access_url) ? 'wp-login' : $access_url).'.php';
+//$access_url = get_option('ol_artemis_login_slug', '');
+//$access_url = empty($access_url) ? 'wp-login.php' : $access_url;
 
 // Check vars: login error
-$login_error = get_option('ol_artemis_login_error_message', 1);
-$login_error = $login_error ? __('access.error.message', 'olympus-artemis') : '';
+//$login_error = get_option('ol_artemis_login_error_message', 1);
+//$login_error = $login_error ? __('access.error.message', 'olympus-artemis') : '';
 
 // Check vars: login header
 $login_header_title = get_option('ol_artemis_login_header_title', '');
@@ -60,7 +64,7 @@ return [
     /**
      * Redisign wp-login.php page with custom error message.
      */
-    'login-error'   => $login_error,
+    //'login-error'   => $login_error,
 
     /**
      * Redisign wp-login.php page with custom header configurations.

@@ -62,16 +62,22 @@ class ArtemisOptionsAdminPage extends \GetOlympus\Zeus\AdminPage\Controller\Admi
                     'default'       => 'default',
                     'options'       => $themes,
                 ]),
-                /*\GetOlympus\Field\Text::build('ol_artemis_access_urls', [
+                /*\GetOlympus\Field\Text::build('ol_artemis_login_slug', [
                     'title'         => __('admin.login.url.title', 'olympus-artemis'),
                     'description'   => __('admin.login.url.description', 'olympus-artemis'),
-                    'default'       => 'wp-login',
+                    'default'       => 'wp-login.php',
                     'options'       => [
                         'before' => '<code>'.$site.'/</code>',
-                        'after'  => '<code>.php</code>',
+                        //'after'  => '<code>.php</code>',
                     ],
                 ]),*/
-                \GetOlympus\Field\Radio::build('ol_artemis_login_error_message', [
+                \GetOlympus\Field\Text::build('ol_artemis_login_header_title', [
+                    'title'         => __('admin.login.headertitle.title', 'olympus-artemis'),
+                    'description'   => __('admin.login.headertitle.description', 'olympus-artemis'),
+                    'placeholder'   => $name,
+                    'default'       => $name,
+                ]),
+                /*\GetOlympus\Field\Radio::build('ol_artemis_login_error_message', [
                     'title'         => __('admin.login.error.title', 'olympus-artemis'),
                     'description'   => sprintf(
                         __('admin.login.error.description', 'olympus-artemis'),
@@ -82,13 +88,7 @@ class ArtemisOptionsAdminPage extends \GetOlympus\Zeus\AdminPage\Controller\Admi
                         0 => __('admin.default.no', 'olympus-artemis'),
                         1 => __('admin.default.yes', 'olympus-artemis'),
                     ],
-                ]),
-                \GetOlympus\Field\Text::build('ol_artemis_login_header_title', [
-                    'title'         => __('admin.login.headertitle.title', 'olympus-artemis'),
-                    'description'   => __('admin.login.headertitle.description', 'olympus-artemis'),
-                    'placeholder'   => $name,
-                    'default'       => $name,
-                ]),
+                ]),*/
                 \GetOlympus\Field\Radio::build('ol_artemis_login_header_url', [
                     'title'         => __('admin.login.headerurl.title', 'olympus-artemis'),
                     'default'       => 1,

@@ -1,0 +1,93 @@
+msgid "access.error.message"
+msgstr "Something went wrong with your login or password."
+
+msgid "admin.artemis.title"
+msgstr "Artemis"
+
+msgid "admin.artemis.name"
+msgstr "Artemis Options"
+
+msgid "admin.artemis.welcome"
+msgstr "Welcome"
+
+msgid "admin.artemis.login"
+msgstr "Login page"
+
+msgid "admin.default.no"
+msgstr "No"
+
+msgid "admin.default.yes"
+msgstr "Yes"
+
+msgid "admin.default.wordpress"
+msgstr "WordPress"
+
+msgid "admin.login.theme.title"
+msgstr "Choose the theme you want to use"
+
+msgid "admin.login.theme.description"
+msgstr "If you want to see them in action, please go to <a href=\"%s\" target=\"_blank\">your profile</a> page and customize your current admin theme."
+
+msgid "admin.login.url.title"
+msgstr "Custom login page URL"
+
+msgid "admin.login.url.description"
+msgstr "Define a custom login page URL instead of the very known <code>wp-login.php</code>."
+
+msgid "admin.login.error.title"
+msgstr "Use Artemis custom error message to increase your security?"
+
+msgid "admin.login.error.description"
+msgstr "Whatever the error, the message \"%s\" will be displayed."
+
+msgid "admin.login.headertitle.title"
+msgstr "Header title"
+
+msgid "admin.login.headertitle.description"
+msgstr "Define a custom title for your login page."
+
+msgid "admin.login.headerurl.title"
+msgstr "Use your own Website URL on the logo?"
+
+msgid "admin.login.shake.title"
+msgstr "Keep the shake login animation on error?"
+
+msgid "welcome.title"
+msgstr "This is where it all begins"
+
+msgid "welcome.intro"
+msgstr "Thanks so much for joining us and using our excellent <b>Artemis Backend Theme</b> plugin.<br/>You are on your way to customize and enhance your WordPress admin panel experience!"
+
+msgid "welcome.howto.title"
+msgstr "How-to"
+
+msgid "welcome.howto.content.first"
+msgstr "The Artemis Backend Theme plugin is built with %d admin themes described below.<br/>You can define yours in <a href=\"%s\">your profile page</a>."
+
+msgid "welcome.howto.content.second"
+msgstr "You can customize as well your website Login page by choosing the admin login theme you want."
+
+msgid "welcome.adminthemes.title"
+msgstr "Admin themes"
+
+msgid "welcome.packages.title"
+msgstr "Recommended Olympus packages"
+
+msgid "welcome.packages.olympus.title"
+msgstr "Olympus framework"
+
+msgid "welcome.packages.olympus.description"
+msgstr "The Olympus framework, your simple, easy to use and powerfull framework to deploy and work with WordPress."
+
+msgid "welcome.packages.zeus.title"
+msgstr "Olympus Zeus"
+
+msgid "welcome.packages.zeus.description"
+msgstr "The Olympus Zeus framework core system used to make all your WordPress plugins and themes developments easier and efficient."
+
+msgid "welcome.outro.author"
+msgstr "<b>Author:</b> <a href=\"%s\" target=\"_blank\">Achraf Chouk</a> - <b>Copyright:</b> <a href=\"%s\" target=\"_blank\">MIT Licence</a>"
+
+msgid "welcome.outro.source"
+msgstr "<a href=\"%s\" target=\"_blank\">%s</a>"
+

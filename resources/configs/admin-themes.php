@@ -17,6 +17,10 @@ function getRealColor($value, $contents)
     return "@" === substr($value, 0, 1) ? getRealColor($contents[substr($value, 1)], $contents) : $value;
 }
 
+if (!defined('ABSPATH')) {
+    die('You are not authorized to directly access to this page');
+}
+
 // Generate CSS file path
 $rootpath = dirname(OL_ARTEMIS_RESOURCESPATH);
 $csspath = basename($rootpath).S.'resources'.S.'assets'.S.'css'.S;
@@ -25,7 +29,13 @@ $jsons = [];
 // Get cache from file
 if (file_exists($cachefile = CACHEPATH.'artemisbackendtheme-themes.php')) {
     $jsons = include_once $cachefile;
-    return $jsons;
+    $files = new FilesystemIterator(OL_ARTEMIS_RESOURCESPATH.S.'..'.S.'src'.S.'configs'.S, FilesystemIterator::SKIP_DOTS);
+
+    if (iterator_count($files) === count($jsons)) {
+        return $jsons;
+    }
+
+    unlink($cachefile);
 }
 
 // Iterate on all files

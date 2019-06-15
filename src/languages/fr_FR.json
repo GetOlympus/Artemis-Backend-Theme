@@ -13,7 +13,7 @@
     "admin.login.theme.title": "Définissez le thème à utiliser",
     "admin.login.theme.description": "Si vous souhaitez le voir en action, merci de vous rendre dans <a href=\"%s\" target=\"_blank\">votre page de profil</a> afin de personnaliser votre thème d'adminisitration actuel.",
     "admin.login.url.title": "URL de page de connexion personnalisée",
-    "admin.login.url.description": "Définissez une URL de page de connexion à la place du fameux slug <code>wp-login</code>.",
+    "admin.login.url.description": "Définissez une URL de page de connexion à la place du fameux <code>wp-login.php</code>.",
     "admin.login.error.title": "Utilisez le message d'erreur personnalisé ?",
     "admin.login.error.description": "Quelque soit l'erreur, le message suivant \"%s\" sera affiché. Celui-ci permet d'améliorer la sécurité de votre site WordPress.",
     "admin.login.headertitle.title": "Title de page",

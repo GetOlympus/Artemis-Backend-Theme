@@ -9,6 +9,10 @@
  * @since    0.0.1
  */
 
+if (!defined('ABSPATH')) {
+    die('You are not authorized to directly access to this page');
+}
+
 // Vars
 $count = count($themes) - 1;
 $profile = admin_url('profile.php');

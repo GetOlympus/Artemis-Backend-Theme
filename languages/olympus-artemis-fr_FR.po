@@ -1,0 +1,93 @@
+msgid "access.error.message"
+msgstr "Le nom d'utilisateur ou le mot de passe est erroné."
+
+msgid "admin.artemis.title"
+msgstr "Artemis"
+
+msgid "admin.artemis.name"
+msgstr "Artemis Options"
+
+msgid "admin.artemis.welcome"
+msgstr "Bienvenue"
+
+msgid "admin.artemis.login"
+msgstr "Page de connexion"
+
+msgid "admin.default.no"
+msgstr "Non"
+
+msgid "admin.default.yes"
+msgstr "Oui"
+
+msgid "admin.default.wordpress"
+msgstr "WordPress"
+
+msgid "admin.login.theme.title"
+msgstr "Définissez le thème à utiliser"
+
+msgid "admin.login.theme.description"
+msgstr "Si vous souhaitez le voir en action, merci de vous rendre dans <a href=\"%s\" target=\"_blank\">votre page de profil</a> afin de personnaliser votre thème d'adminisitration actuel."
+
+msgid "admin.login.url.title"
+msgstr "URL de page de connexion personnalisée"
+
+msgid "admin.login.url.description"
+msgstr "Définissez une URL de page de connexion à la place du fameux <code>wp-login.php</code>."
+
+msgid "admin.login.error.title"
+msgstr "Utilisez le message d'erreur personnalisé ?"
+
+msgid "admin.login.error.description"
+msgstr "Quelque soit l'erreur, le message suivant \"%s\" sera affiché. Celui-ci permet d'améliorer la sécurité de votre site WordPress."
+
+msgid "admin.login.headertitle.title"
+msgstr "Title de page"
+
+msgid "admin.login.headertitle.description"
+msgstr "Définissez un title personnalisé pour votre page de connexion."
+
+msgid "admin.login.headerurl.title"
+msgstr "Utilisez l'URL de votre site public au clic sur le logo ?"
+
+msgid "admin.login.shake.title"
+msgstr "Conserver l'animation de secousse lors d'une erreur ?"
+
+msgid "welcome.title"
+msgstr "C'est ici que tout démarre"
+
+msgid "welcome.intro"
+msgstr "Merci pour avoir choisi d'utiliser notre excellente extension <b>Artemis Backend Theme</b>.<br/>Vous êtes sur la bonne voie pour personnaliser et améliorer votre expérience d'administration WordPress !"
+
+msgid "welcome.howto.title"
+msgstr "Comment faire"
+
+msgid "welcome.howto.content.first"
+msgstr "L'extension Artemis Backend Theme a été installée et se compose de %d thèmes d'administration décrits ci-dessous.<br/>Vous pouvez choisir le vôtre depuis <a href=\"%s\">votre page de profil</a>."
+
+msgid "welcome.howto.content.second"
+msgstr "Vous pouvez personnaliser également votre page de connexion en choisissant, par exemple, le thème à afficher."
+
+msgid "welcome.adminthemes.title"
+msgstr "Thèmes d'administration"
+
+msgid "welcome.packages.title"
+msgstr "Paquets Olympus recommandés"
+
+msgid "welcome.packages.olympus.title"
+msgstr "Framework Olympus"
+
+msgid "welcome.packages.olympus.description"
+msgstr "Le Framework Olympus, votre outil de déploiement et de travail aussi simple, facile à utiliser que puissant pour vos sites WordPress."
+
+msgid "welcome.packages.zeus.title"
+msgstr "Olympus Zeus"
+
+msgid "welcome.packages.zeus.description"
+msgstr "Le framework Olympus Zeus core system à utiliser pour rendre le développement de vos extensions et thèmes WordPress encore plus facile et plus efficace."
+
+msgid "welcome.outro.author"
+msgstr "<b>Auteur:</b> <a href=\"%s\" target=\"_blank\">Achraf Chouk</a> - <b>Copyright:</b> <a href=\"%s\" target=\"_blank\">Licence MIT</a>"
+
+msgid "welcome.outro.source"
+msgstr "<a href=\"%s\" target=\"_blank\">%s</a>"
+
