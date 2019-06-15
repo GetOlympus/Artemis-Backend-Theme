@@ -215,6 +215,7 @@
 
   "tableoddbackgroundcolor": "@boxcontainerbackgroundcolor",
   "tablecolor": "@blackcolor",
+  "tabletitlebackgroundcolor": "fade(@boxbackgroundcolor, 50%)",
   "tabletitlecolor": "@linkcolor",
 
 
