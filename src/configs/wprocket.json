@@ -1,5 +1,6 @@
 {
   "name": "WP Rocket",
+  "file": "wprocket",
 
 
 
@@ -59,6 +60,7 @@
 
 
   "adminbarbackgroundcolor": "@thirdcolor",
+  "adminbarborderbottom": "none",
   "adminbarcolor": "@whitecolor",
   "adminbarhoverbackgroundcolor": "#121f27",
   "adminbarhovercolor": "@whitecolor",
@@ -66,6 +68,7 @@
   "adminbarheight": "32px",
   "adminbarmargin": "0",
   "adminbarpadding": "0 0 0 @defaultsidebarwidth",
+  "adminbarposition": "fixed",
 
   "sidebarbackgroundcolor": "@adminbarbackgroundcolor",
   "sidebarcolor": "@adminbarcolor",

@@ -1,12 +1,31 @@
 /*! 11.adminbar.quicklinks */
 
 #wpadminbar .quicklinks {
+    .ab-top-menu > li > a.ab-item {
+        line-height: @adminbarheight;
+
+        > .ab-label {
+            height: @adminbarheight;
+            line-height: @adminbarheight;
+            vertical-align: top;
+        }
+
+        > .ab-icon {
+            line-height: @adminbarheight;
+
+            &:before {
+                top: 0;
+            }
+        }
+    }
+
     .menupop ul.ab-sub-secondary {
         background-color: @adminbarhoverbackgroundcolor;
     }
 
     .ab-empty-item, a {
         height: @adminbarheight;
+        line-height: @adminbarheight;
     }
 
     .menupop ul li a,
@@ -16,6 +35,22 @@
         &:focus, &:hover {
             color: @adminbarhovercolor;
         }
+    }
+}
+
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default > li > a.ab-item {
+    line-height: @adminbarheight;
+
+    > .ab-icon {
+        line-height: @adminbarheight;
+        padding: 0;
+    }
+
+    &:before,
+    > .ab-icon:before {
+        line-height: @adminbarheight;
+        padding: 0;
+        top: 0;
     }
 }
 

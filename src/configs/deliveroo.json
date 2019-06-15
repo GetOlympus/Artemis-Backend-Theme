@@ -1,37 +1,37 @@
 {
-  "name": "Artemis",
-  "file": "artemis",
+  "name": "Deliveroo",
+  "file": "deliveroo",
 
 
 
-  "primarycolor": "#47baec",
-  "secondarycolor": "#66707c",
-  "thirdcolor": "#292d38",
+  "primarycolor": "#00ccbc",
+  "secondarycolor": "@whitecolor",
+  "thirdcolor": "#0e1a22",
 
   "whitecolor": "#ffffff",
-  "blackcolor": "#181a21",
-  "infocolor": "#1297e0",
-  "warningcolor": "#e74c3c",
-  "errorcolor": "#e74c3c",
-  "successcolor": "#99d537",
+  "blackcolor": "#2e3333",
+  "infocolor": "#007e8a",
+  "warningcolor": "#e67400",
+  "errorcolor": "#e64135",
+  "successcolor": "#77bf2a",
 
   "defaultbordercolor": "@secondarycolor",
-  "defaultborderradius": "3px",
-  "defaulttransition": "all .250s ease",
-  "defaultsidebarwidth": "200px",
+  "defaultborderradius": ".25rem",
+  "defaulttransition": "all .150s ease-out",
+  "defaultsidebarwidth": "280px",
 
 
 
-  "bodybackgroundcolor": "@whitecolor",
+  "bodybackgroundcolor": "#f9fafa",
   "bodypadding": "20px",
 
 
 
-  "linkcolor": "#1387ba",
+  "linkcolor": "#00a396",
   "linktextdecoration": "none",
   "linktexttransform": "none",
 
-  "linkhovercolor": "darken(@linkcolor, 20%)",
+  "linkhovercolor": "@primarycolor",
   "linkhovertextdecoration": "none",
   "linkhovertexttransform": "none",
 
@@ -40,17 +40,17 @@
 
 
   "inputbackgroundcolor": "@whitecolor",
-  "inputborder": "1px solid lighten(@blackcolor, 75%)",
-  "inputborderradius": "@defaultborderradius",
-  "inputboxshadow": "inset 0 1px 2px fade(@blackcolor, 7.5%)",
-  "inputcolor": "lighten(@blackcolor, 25%)",
+  "inputborder": "1px solid #979999",
+  "inputborderradius": "4px",
+  "inputboxshadow": "none",
+  "inputcolor": "#2e3333",
   "inputfontsize": "100%",
-  "inputpadding": "6px 8px",
+  "inputpadding": "6px 14px",
 
   "inputfocusbackgroundcolor": "@inputbackgroundcolor",
   "inputfocusborder": "1px solid @primarycolor",
   "inputfocusborderradius": "@inputborderradius",
-  "inputfocusboxshadow": "inset 0 1px 2px fade(@blackcolor, 7.5%), 0 0 0 3px fade(@primarycolor, 30%)",
+  "inputfocusboxshadow": "0 0 0 1px @primarycolor, 0 0 0 3px rgba(0,204,188,.3)",
   "inputfocuscolor": "@inputcolor",
   "inputfocusfontsize": "@inputfontsize",
   "inputfocuspadding": "@inputpadding",
@@ -59,107 +59,107 @@
 
 
 
-  "adminbarbackgroundcolor": "@thirdcolor",
-  "adminbarborderbottom": "none",
-  "adminbarcolor": "@secondarycolor",
-  "adminbarhoverbackgroundcolor": "@thirdcolor",
+  "adminbarbackgroundcolor": "@whitecolor",
+  "adminbarborderbottom": "1px solid rgba(0,0,0,.08)",
+  "adminbarcolor": "@blackcolor",
+  "adminbarhoverbackgroundcolor": "@whitecolor",
   "adminbarhovercolor": "@primarycolor",
   "adminbarfontsize": "13px",
-  "adminbarheight": "32px",
+  "adminbarheight": "70px",
   "adminbarmargin": "0",
   "adminbarpadding": "0 0 0 @defaultsidebarwidth",
-  "adminbarposition": "fixed",
+  "adminbarposition": "absolute",
 
-  "sidebarbackgroundcolor": "@thirdcolor",
-  "sidebarcolor": "@secondarycolor",
-  "sidebarhoverbackgroundcolor": "@thirdcolor",
-  "sidebarhovercolor": "@primarycolor",
-  "sidebarfontsize": "13px",
+  "sidebarbackgroundcolor": "@adminbarbackgroundcolor",
+  "sidebarcolor": "@adminbarcolor",
+  "sidebarhoverbackgroundcolor": "@adminbarhoverbackgroundcolor",
+  "sidebarhovercolor": "@adminbarhovercolor",
+  "sidebarfontsize": "@adminbarfontsize",
   "sidebarmargin": "0 0 @adminbarheight",
   "sidebarpadding": "0",
   "sidebartexttransform": "none",
   "sidebarwidth": "@defaultsidebarwidth",
 
-  "dropdownbackgroundcolor": "@blackcolor",
-  "dropdownboxshadow": "0 3px 5px fade(@blackcolor, 2%)",
-  "dropdowncolor": "@secondarycolor",
-  "dropdownhoverbackgroundcolor": "@blackcolor",
-  "dropdownhovercolor": "@primarycolor",
-  "dropdownfontsize": "13px",
+  "dropdownbackgroundcolor": "@adminbarhoverbackgroundcolor",
+  "dropdownboxshadow": "@buttonboxshadow",
+  "dropdowncolor": "@adminbarcolor",
+  "dropdownhoverbackgroundcolor": "@adminbarhoverbackgroundcolor",
+  "dropdownhovercolor": "@adminbarhovercolor",
+  "dropdownfontsize": "@adminbarfontsize",
   "dropdownmargin": "0",
   "dropdownpadding": "8px 0",
-  "dropdownwidth": "160px",
+  "dropdownwidth": "@defaultsidebarwidth",
 
 
 
-  "boxcontainerbackgroundcolor": "rgba(24,26,33,.015)",
+  "boxcontainerbackgroundcolor": "@whitecolor",
   "boxcontainerborder": "none",
   "boxcontainerborderradius": "@defaultborderradius",
-  "boxcontainerboxshadow": "0 1px 1px fade(@blackcolor, 0.4%)",
-  "boxcontainercolor": "@blackcolor",
-  "boxcontainerpadding": "0",
+  "boxcontainerboxshadow": "0 0.0625rem 0.25rem rgba(0,0,0,.08)",
+  "boxcontainercolor": "#828585",
+  "boxcontainerpadding": "16px",
 
   "boxheadercolor": "@blackcolor",
-  "boxheaderfontsize": "1.4rem",
-  "boxheaderfontweight": "400",
+  "boxheaderfontsize": "16px",
+  "boxheaderfontweight": "700",
   "boxheaderletterspacing": ".02em",
-  "boxheaderlineheight": "24px",
-  "boxheadermargin": "0 0 20px",
+  "boxheaderlineheight": "20px",
+  "boxheadermargin": "0 0 10px",
   "boxheaderpadding": "8px 12px",
   "boxheadertextalign": "left",
   "boxheadertexttransform": "none",
 
-  "boxbackgroundcolor": "transparent",
+  "boxbackgroundcolor": "#ffffff",
   "boxborder": "none",
   "boxborderradius": "0",
   "boxboxshadow": "none",
   "boxcolor": "@boxcontainercolor",
-  "boxfontsize": "14px",
-  "boxpadding": "16px",
+  "boxfontsize": "12px",
+  "boxpadding": "16px 0 0",
 
 
 
-  "buttonbackgroundcolor": "fade(@blackcolor, 5%)",
+  "buttonbackgroundcolor": "@secondarycolor",
   "buttonbackgroundimage": "none",
-  "buttonborder": "none",
-  "buttonborderradius": "@defaultborderradius",
+  "buttonborder": "1px solid #e8ebeb",
+  "buttonborderradius": "4px",
   "buttonboxshadow": "none",
-  "buttoncolor": "@linkcolor",
+  "buttoncolor": "@blackcolor",
   "buttonfontsize": "12px",
   "buttonmargin": "0",
   "buttonpadding": "2px 14px",
   "buttontextshadow": "none",
   "buttontexttransform": "none",
 
-  "buttonhoverbackgroundcolor": "fade(@blackcolor, 10%)",
+  "buttonhoverbackgroundcolor": "#f9fafa",
   "buttonhoverbackgroundimage": "@buttonbackgroundimage",
   "buttonhoverborder": "@buttonborder",
   "buttonhoverborderradius": "@buttonborderradius",
   "buttonhoverboxshadow": "@buttonboxshadow",
-  "buttonhovercolor": "@buttoncolor",
+  "buttonhovercolor": "@primarycolor",
   "buttonhoverfontsize": "@buttonfontsize",
   "buttonhovermargin": "@buttonmargin",
   "buttonhoverpadding": "@buttonpadding",
   "buttonhovertextshadow": "@buttontextshadow",
-  "buttonhovertexttransform": "@buttontextshadow",
+  "buttonhovertexttransform": "@buttontexttransform",
 
   "buttontransition": "@defaulttransition",
 
 
 
-  "buttonprimarybackgroundcolor": "@linkcolor",
+  "buttonprimarybackgroundcolor": "@primarycolor",
   "buttonprimarybackgroundimage": "none",
   "buttonprimaryborder": "none",
   "buttonprimaryborderradius": "@defaultborderradius",
-  "buttonprimaryboxshadow": "none",
+  "buttonprimaryboxshadow": "@buttonboxshadow",
   "buttonprimarycolor": "@whitecolor",
-  "buttonprimaryfontsize": "12px",
+  "buttonprimaryfontsize": "@buttonfontsize",
   "buttonprimarymargin": "0",
   "buttonprimarypadding": "2px 14px",
   "buttonprimarytextshadow": "none",
   "buttonprimarytexttransform": "none",
 
-  "buttonprimaryhoverbackgroundcolor": "darken(@buttonprimarybackgroundcolor, 10%)",
+  "buttonprimaryhoverbackgroundcolor": "darken(@primarycolor, 10%)",
   "buttonprimaryhoverbackgroundimage": "@buttonprimarybackgroundimage",
   "buttonprimaryhoverborder": "@buttonprimaryborder",
   "buttonprimaryhoverborderradius": "@buttonprimaryborderradius",
@@ -169,7 +169,7 @@
   "buttonprimaryhovermargin": "@buttonprimarymargin",
   "buttonprimaryhoverpadding": "@buttonprimarypadding",
   "buttonprimaryhovertextshadow": "@buttonprimarytextshadow",
-  "buttonprimaryhovertexttransform": "@buttonprimarytextshadow",
+  "buttonprimaryhovertexttransform": "@buttonprimarytexttransform",
 
   "buttonprimarytransition": "@defaulttransition",
 
@@ -185,7 +185,7 @@
   "buttonsecondarymargin": "@buttonmargin",
   "buttonsecondarypadding": "@buttonpadding",
   "buttonsecondarytextshadow": "@buttontextshadow",
-  "buttonsecondarytexttransform": "@buttontextshadow",
+  "buttonsecondarytexttransform": "@buttontexttransform",
 
   "buttonsecondaryhoverbackgroundcolor": "@buttonhoverbackgroundcolor",
   "buttonsecondaryhoverbackgroundimage": "@buttonhoverbackgroundimage",
@@ -197,7 +197,7 @@
   "buttonsecondaryhovermargin": "@buttonhovermargin",
   "buttonsecondaryhoverpadding": "@buttonhoverpadding",
   "buttonsecondaryhovertextshadow": "@buttonhovertextshadow",
-  "buttonsecondaryhovertexttransform": "@buttonhovertextshadow",
+  "buttonsecondaryhovertexttransform": "@buttonhovertexttransform",
 
   "buttonsecondarytransition": "@buttontransition",
 
@@ -215,32 +215,32 @@
 
   "tableoddbackgroundcolor": "@boxcontainerbackgroundcolor",
   "tablecolor": "@blackcolor",
-  "tabletitlecolor": "@linkcolor",
+  "tabletitlecolor": "@blackcolor",
 
 
 
-  "loginbackgroundcolor": "#fbfbfc",
+  "loginbackgroundcolor": "@bodybackgroundcolor",
   "loginbackgroundimage": "none",
   "loginbackgroundsize": "auto",
   "logincolor": "@boxcontainercolor",
-  "loginfontsize": "@boxfontsize",
-  "loginlineheight": "15px",
+  "loginfontsize": "1.9rem",
+  "loginlineheight": "1.5em",
 
   "logincontainerbackgroundcolor": "@boxcontainerbackgroundcolor",
   "logincontainerborder": "@boxcontainerborder",
   "logincontainerborderradius": "@boxcontainerborderradius",
   "logincontainerboxshadow": "@boxcontainerboxshadow",
   "logincontainermargin": "30px auto",
-  "logincontainerpadding": "@boxpadding",
-  "logincontainerwidth": "400px",
+  "logincontainerpadding": "30px 42px",
+  "logincontainerwidth": "500px",
 
   "logintitlecolor": "@boxcontainercolor",
   "logintitledisplay": "block",
-  "logintitlemargin": "0 0 20px",
+  "logintitlemargin": "0 0 30px",
 
 
 
-  "iconbase": "@secondarycolor",
+  "iconbase": "@primarycolor",
   "iconfocus": "@primarycolor",
-  "iconposition": "left"
+  "iconposition": "right"
 }

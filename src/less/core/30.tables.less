@@ -2,24 +2,38 @@
 
 // globals
 
-.widefat thead td.check-column,
-.widefat tbody th.check-column,
-.updates-table tbody td.check-column,
-.widefat tfoot td.check-column {
+table.widefat thead td.check-column,
+table.widefat tbody th.check-column,
+table.updates-table tbody td.check-column,
+table.widefat tfoot td.check-column {
     padding-left: 12px;
 }
 
 // colors
 
-.widefat th, .widefat td {
-    color: @tablecolor;
+table.widefat,
+.wp-editor-container,
+.stuffbox,
+p.popular-tags,
+.widgets-holder-wrap,
+.popular-tags,
+.feature-filter,
+.imgedit-group,
+.comment-ays {
+    background: transparent;
+
+    th, td {
+        color: @tablecolor;
+    }
 }
 
-.widefat thead tr th,
-.widefat thead tr td,
-.widefat tfoot tr th,
-.widefat tfoot tr td {
-    color: @tabletitlecolor;
+table.widefat thead tr,
+table.widefat tfoot tr {
+    background-color: fade(@boxbackgroundcolor, 50%);
+
+    th, td, th a, td a {
+        color: @tabletitlecolor;
+    }
 }
 
 .striped > tbody > :nth-child(odd),

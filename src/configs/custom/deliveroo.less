@@ -1,0 +1,41 @@
+// custom background
+
+body.login,
+#wpcontent {
+    &:before {
+        background-color: @primarycolor;
+        bottom: 100%;
+        content: "";
+        height: 1000px;
+        left: 0;
+        margin-bottom: -104px;
+        position: absolute;
+        right: 0;
+
+        -webkit-transform: skewY(-6deg);
+        -moz-transform: skewY(-6deg);
+        transform: skewY(-6deg);
+
+        -webkit-transform-origin: 50%;
+        -moz-transform-origin: 50%;
+        transform-origin: 50%;
+    }
+}
+
+// main titles
+
+.wrap h1,
+h1.wp-heading-inline {
+    color: @whitecolor;
+}
+
+// custom logo
+
+ul#adminmenu:before {
+    background-image: url(../img/deliveroo-logo.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 140px;
+}

@@ -25,7 +25,7 @@
     margin-top: 0;
 
     .edit-post-sidebar__panel-tab.is-active {
-        box-shadow: inset 0 -3px @defaultbordercolor;
+        box-shadow: none;
     }
 }
 
@@ -40,6 +40,46 @@
 
     &:focus, &:hover {
         border: none;
+    }
+}
+
+.edit-post-layout__content {
+    background-color: fade(@whitecolor, 90%);
+}
+
+@media (min-width: 782px) {
+    .block-editor__container {
+        min-height: calc(100vh - @adminbarheight);
+    }
+
+    .edit-post-header {
+        top: @adminbarheight;
+    }
+
+    .edit-post-sidebar {
+        top: (@adminbarheight + 56);
+    }
+}
+
+@media (min-width: 600px) {
+    .edit-post-header {
+        top: @adminbarheight;
+    }
+
+    .edit-post-sidebar {
+        top: (@adminbarheight + 56);
+    }
+}
+
+// tips
+
+.nux-dot-tip {
+    &:before {
+        background: fade(@primarycolor, 90%);
+    }
+
+    &:after {
+        background: @primarycolor;
     }
 }
 

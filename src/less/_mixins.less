@@ -1,0 +1,13 @@
+/* All mixins functions */
+
+// admin bar
+
+#wp_adminbar_position (fixed; @height) {
+    top: 0;
+}
+#wp_adminbar_position (absolute; @height) {
+    top: -@height;
+}
+#wp_adminbar_position (@_; @height) {
+    position: @_;
+}

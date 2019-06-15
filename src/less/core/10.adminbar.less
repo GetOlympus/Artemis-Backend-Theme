@@ -1,18 +1,18 @@
 /*! 10.adminbar */
 
+@import (reference) "../_mixins.less";
+
 // admin bar
 
 #wpadminbar {
     background-color: @adminbarbackgroundcolor;
-    box-sizing: border-box;
+    border-bottom: @adminbarborderbottom;
+    box-sizing: content-box;
     height: @adminbarheight;
     left: @sidebarwidth;
+    #wp_adminbar_position(@adminbarposition; @adminbarheight);
     right: 0;
     width: auto;
-
-    * {
-        line-height: @adminbarheight;
-    }
 
     &:not(.mobile) .ab-top-menu > li:hover > .ab-item,
     .menupop .ab-sub-wrapper,

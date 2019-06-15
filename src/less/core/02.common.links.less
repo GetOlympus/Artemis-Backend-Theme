@@ -2,6 +2,7 @@
 
 .wp-core-ui .button-link,
 .components-button.is-link,
+.media-frame a,
 a {
     background-color: transparent;
     border: none;
@@ -22,6 +23,10 @@ a {
     }
 }
 
+.view-switch a.current:before {
+    color: @linkcolor;
+}
+
 .filter-links li > a {
     border: 1px solid @whitecolor;
     border-width: 4px 0;
@@ -36,4 +41,15 @@ a {
 .wp-core-ui .media-modal .trash-attachment,
 .wp-core-ui .media-modal .untrash-attachment {
     color: @errorcolor;
+}
+
+.screen-reader-shortcut:focus {
+    background-color: @buttonprimarybackgroundcolor;
+    background-image: @buttonprimarybackgroundimage;
+    border: @buttonprimaryborder;
+    border-radius: @buttonprimaryborderradius;
+    box-shadow: @buttonprimaryboxshadow;
+    color: @buttonprimarycolor;
+    text-shadow: @buttonprimarytextshadow;
+    text-transform: @buttonprimarytexttransform;
 }

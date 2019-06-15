@@ -41,6 +41,11 @@
     }
 }
 
+.wp-core-ui button.button,
+.wp-core-ui input.button {
+    line-height: @buttonfontsize;
+}
+
 .wp-core-ui .button.button-primary {
     background-color: @buttonprimarybackgroundcolor;
     background-image: @buttonprimarybackgroundimage;
@@ -171,7 +176,7 @@
     background-color: @buttonprimarybackgroundcolor;
 }
 
-// post Guttenberg buttons
+// Guttenberg buttons
 
 .components-button,
 .components-button.is-default,
@@ -205,6 +210,10 @@
         box-shadow: @boxboxshadow;
         color: @boxcolor;
     }
+}
+
+.components-button.is-tertiary:not(:disabled):not([aria-disabled="true"]):not(.is-default):hover {
+    color: @buttonprimaryhovercolor;
 }
 
 .components-menu-item__button:focus:not(:disabled):not([aria-disabled="true"]),
