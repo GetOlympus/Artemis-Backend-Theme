@@ -220,6 +220,10 @@
 
 
 
+  "widgetbackgroundcolor": "fade(@boxbackgroundcolor, 50%)",
+
+
+
   "loginbackgroundcolor": "@bodybackgroundcolor",
   "loginbackgroundimage": "none",
   "loginbackgroundsize": "auto",

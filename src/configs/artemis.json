@@ -220,6 +220,10 @@
 
 
 
+  "widgetbackgroundcolor": "@boxcontainerbackgroundcolor",
+
+
+
   "loginbackgroundcolor": "#fbfbfc",
   "loginbackgroundimage": "none",
   "loginbackgroundsize": "auto",

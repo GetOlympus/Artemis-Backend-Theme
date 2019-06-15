@@ -220,6 +220,10 @@
 
 
 
+  "widgetbackgroundcolor": "fade(@boxbackgroundcolor, 50%)",
+
+
+
   "loginbackgroundcolor": "@bodybackgroundcolor",
   "loginbackgroundimage": "url(../img/wprocket-login.svg), linear-gradient(to bottom, #0e1b23, #0e1b23 300px, #f6f6f6 300px)",
   "loginbackgroundsize": "auto",
