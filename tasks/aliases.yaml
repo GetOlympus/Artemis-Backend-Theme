@@ -21,8 +21,6 @@ textdomain:
     # Add text domain in PHP files and check everything is fine
     - 'addtextdomain:app'
     - 'checktextdomain:app'
-    # Generate POT and PO files
-    - 'makepot:app'
     # Generate MO files and remove PO files
     - 'potomo:app'
     # Clean POT file
