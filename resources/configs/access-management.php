@@ -22,14 +22,14 @@ $home = defined('OL_BLOG_HOME') ? OL_BLOG_HOME : get_option('home');
 
 // Check vars: login header
 $login_header_title = get_option('ol_artemis_login_header_title', '');
-$login_header_url = get_option('ol_artemis_login_header_url', 1);
+$login_header_url = get_option('ol_artemis_login_header_url', true);
 $login_header = [
     'title' => $login_header_title,
     'url'   => $login_header_url ? $home : false,
 ];
 
 // Check vars: login shake
-$login_shake = get_option('ol_artemis_login_shake', 1);
+$login_shake = get_option('ol_artemis_login_shake', true);
 $login_shake = (bool) $login_shake;
 
 // Check vars: login style

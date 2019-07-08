@@ -14,8 +14,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Vars
-$count = count($themes) - 1;
-$profile = admin_url('profile.php');
+$count = count($v['themes']) - 1;
 $packages = [
     0 => [
         'link' => 'https://github.com/GetOlympus/Olympus',
@@ -40,12 +39,12 @@ $content .= '<p>'.__('welcome.intro', 'olympus-artemis').'</p>';
 
 // How-to section
 $content .= '<h3>'.__('welcome.howto.title', 'olympus-artemis').'</h3>';
-$content .= sprintf('<p>'.__('welcome.howto.content.first', 'olympus-artemis').'</p>', $count, $profile);
+$content .= sprintf('<p>'.__('welcome.howto.content.first', 'olympus-artemis').'</p>', $count, $v['profile']);
 $content .= '<p>'.__('welcome.howto.content.second', 'olympus-artemis').'</p>';
 
 // Admin themes section
 $content .= '<h3>'.__('welcome.adminthemes.title', 'olympus-artemis').'</h3>';
-$content .= $colors;
+$content .= $v['colors'];
 
 // Recommended packages section
 $content .= '<h3>'.__('welcome.packages.title', 'olympus-artemis').'</h3>';

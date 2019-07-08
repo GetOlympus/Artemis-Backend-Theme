@@ -55,6 +55,8 @@ if (!defined('ABSPATH')) {
 defined('S')                    or define('S', DIRECTORY_SEPARATOR);
 // Admin panel or not, constant defined in main Olympus framework (mu-plugins autoloaded)
 defined('OL_ISADMIN')           or define('OL_ISADMIN', is_admin());
+// Cache path
+defined('CACHEPATH')            or define('CACHEPATH', realpath(dirname(__DIR__)).S.'cache'.S);
 // Vendor package, constant defined in main Olympus framework
 defined('VENDORPATH')           or define('VENDORPATH', realpath(dirname(__DIR__)).S.'vendor'.S);
 
@@ -80,26 +82,16 @@ if (!class_exists('ArtemisBackendTheme')) {
 
             // Initialize configurations
             $this->configurations = [
-                // Alias to load                => File path to associate
-                'AccessManagementConfiguration' => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'access-management.php',
-                'AdminThemesConfiguration'      => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'admin-themes.php',
+                'AccessManagement' => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'access-management.php',
+                'AdminThemes'      => OL_ARTEMIS_RESOURCESPATH.'configs'.S.'admin-themes.php',
             ];
 
-            // Initialize custom components.
-            $this->paths = [
-                // Action to make   => Array of File paths to associate
-                'admin_menu'        => [
-                    OL_ARTEMIS_RESOURCESPATH.'controllers'.S.'adminpages',
-                ],
-            ];
-
-            // Set package type to load properly texts
-            $this->packagetype = 'plugin';
+            // Initialize components.
+            $this->adminpages = OL_ARTEMIS_RESOURCESPATH.'controllers'.S.'adminpages';
 
             // Initialize custom translations.
             $this->translations = [
-                // Text domain to integrate => Languages folder to check
-                'olympus-artemis'           => dirname(plugin_basename(__FILE__)).S.'languages',
+                'olympus-artemis'  => dirname(__FILE__).S.'languages',
             ];
         }
     }
