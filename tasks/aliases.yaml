@@ -1,5 +1,5 @@
-assets:
-  description: 'Build assets into resources directories and clean temporary ones'
+default:
+  description: 'Build minified production-ready and MO files from LESS & JSON sources'
   tasks:
     # Clean target fodlers
     - 'clean:app'
@@ -12,25 +12,3 @@ assets:
     # Minify images and clean source folders
     - 'imagemin:app'
     - 'clean:src'
-
-textdomain:
-  description: 'Build MO files from JSON languages'
-  tasks:
-    # Clean MO old files
-    - 'clean:mo'
-    # Add text domain in PHP files and check everything is fine
-    - 'addtextdomain:app'
-    - 'checktextdomain:app'
-    # Generate MO files and remove PO files
-    - 'potomo:app'
-    # Clean POT file
-    - 'clean:pot'
-
-# Default action to create all css
-default:
-  description: 'Build minified production-ready and MO files from LESS & JSON sources'
-  tasks:
-    # Build assets
-    - 'assets'
-    # Build MO files
-    - 'textdomain'

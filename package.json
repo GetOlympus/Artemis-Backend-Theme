@@ -30,9 +30,8 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-imagemin": "^3.1.0",
     "grunt-contrib-less": "^2.0.0",
-    "grunt-potomo": "^3.5.0",
     "grunt-wp-i18n": "^1.0.3",
-    "load-grunt-config": "^1.0.2",
+    "load-grunt-config": "^2.0.0",
     "lodash.merge": "^4.6.1"
   },
   "dependencies": {

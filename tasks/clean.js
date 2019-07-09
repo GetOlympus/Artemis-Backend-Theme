@@ -16,14 +16,6 @@ module.exports = function (grunt, configs) {
       configs.paths.tar + '/' + configs.paths.assets + '/js/*'
     ],
 
-    mo: [
-      configs.paths.i18n + '/*.mo'
-    ],
-
-    pot: [
-      configs.paths.src + '/' + configs.paths.i18n + '/*.pot'
-    ],
-
     src: [
       configs.paths.src + '/css'
     ]
